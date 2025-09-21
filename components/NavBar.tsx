@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
-import WalletConnect from "@/components/WalletConnect";
+import WalletConnect from "@/components/DynamicWalletConnect";
 
 export default function NavBar(){
   const [open, setOpen] = useState(false);
