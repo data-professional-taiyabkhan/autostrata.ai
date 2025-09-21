@@ -1,0 +1,498 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "app/process/page";
+exports.ids = ["app/process/page"];
+exports.modules = {
+
+/***/ "./action-async-storage.external":
+/*!****************************************************************************!*\
+  !*** external "next/dist/client/components/action-async-storage.external" ***!
+  \****************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/client/components/action-async-storage.external");
+
+/***/ }),
+
+/***/ "../../client/components/action-async-storage.external":
+/*!*******************************************************************************!*\
+  !*** external "next/dist/client/components/action-async-storage.external.js" ***!
+  \*******************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/client/components/action-async-storage.external.js");
+
+/***/ }),
+
+/***/ "./request-async-storage.external":
+/*!*****************************************************************************!*\
+  !*** external "next/dist/client/components/request-async-storage.external" ***!
+  \*****************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/client/components/request-async-storage.external");
+
+/***/ }),
+
+/***/ "../../client/components/request-async-storage.external":
+/*!********************************************************************************!*\
+  !*** external "next/dist/client/components/request-async-storage.external.js" ***!
+  \********************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/client/components/request-async-storage.external.js");
+
+/***/ }),
+
+/***/ "./static-generation-async-storage.external":
+/*!***************************************************************************************!*\
+  !*** external "next/dist/client/components/static-generation-async-storage.external" ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/client/components/static-generation-async-storage.external");
+
+/***/ }),
+
+/***/ "../../client/components/static-generation-async-storage.external":
+/*!******************************************************************************************!*\
+  !*** external "next/dist/client/components/static-generation-async-storage.external.js" ***!
+  \******************************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/client/components/static-generation-async-storage.external.js");
+
+/***/ }),
+
+/***/ "next/dist/compiled/next-server/app-page.runtime.dev.js":
+/*!*************************************************************************!*\
+  !*** external "next/dist/compiled/next-server/app-page.runtime.dev.js" ***!
+  \*************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js");
+
+/***/ }),
+
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "buffer":
+/*!*************************!*\
+  !*** external "buffer" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("buffer");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "module":
+/*!*************************!*\
+  !*** external "module" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("module");
+
+/***/ }),
+
+/***/ "net":
+/*!**********************!*\
+  !*** external "net" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("net");
+
+/***/ }),
+
+/***/ "node:crypto":
+/*!******************************!*\
+  !*** external "node:crypto" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:crypto");
+
+/***/ }),
+
+/***/ "os":
+/*!*********************!*\
+  !*** external "os" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("os");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("path");
+
+/***/ }),
+
+/***/ "punycode":
+/*!***************************!*\
+  !*** external "punycode" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("punycode");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "tls":
+/*!**********************!*\
+  !*** external "tls" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tls");
+
+/***/ }),
+
+/***/ "tty":
+/*!**********************!*\
+  !*** external "tty" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tty");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "worker_threads":
+/*!*********************************!*\
+  !*** external "worker_threads" ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("worker_threads");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
+
+/***/ }),
+
+/***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fprocess%2Fpage&page=%2Fprocess%2Fpage&appPaths=%2Fprocess%2Fpage&pagePath=private-next-app-dir%2Fprocess%2Fpage.tsx&appDir=D%3A%5CProjects%5CAutoStrata.ai%5CCompanyWebsite%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CProjects%5CAutoStrata.ai%5CCompanyWebsite&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fprocess%2Fpage&page=%2Fprocess%2Fpage&appPaths=%2Fprocess%2Fpage&pagePath=private-next-app-dir%2Fprocess%2Fpage.tsx&appDir=D%3A%5CProjects%5CAutoStrata.ai%5CCompanyWebsite%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CProjects%5CAutoStrata.ai%5CCompanyWebsite&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D! ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   GlobalError: () => (/* reexport default from dynamic */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default.a),\n/* harmony export */   __next_app__: () => (/* binding */ __next_app__),\n/* harmony export */   originalPathname: () => (/* binding */ originalPathname),\n/* harmony export */   pages: () => (/* binding */ pages),\n/* harmony export */   routeModule: () => (/* binding */ routeModule),\n/* harmony export */   tree: () => (/* binding */ tree)\n/* harmony export */ });\n/* harmony import */ var next_dist_server_future_route_modules_app_page_module_compiled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/server/future/route-modules/app-page/module.compiled */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/module.compiled.js?d969\");\n/* harmony import */ var next_dist_server_future_route_modules_app_page_module_compiled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module_compiled__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dist/server/future/route-kind */ \"(rsc)/./node_modules/next/dist/server/future/route-kind.js\");\n/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dist/client/components/error-boundary */ \"(rsc)/./node_modules/next/dist/client/components/error-boundary.js\");\n/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/dist/server/app-render/entry-base */ \"(rsc)/./node_modules/next/dist/server/app-render/entry-base.js\");\n/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};\n/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__) if([\"default\",\"tree\",\"pages\",\"GlobalError\",\"originalPathname\",\"__next_app__\",\"routeModule\"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__[__WEBPACK_IMPORT_KEY__]\n/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);\n\"TURBOPACK { transition: next-ssr }\";\n\n\n// We inject the tree and pages here so that we can use them in the route\n// module.\nconst tree = {\n        children: [\n        '',\n        {\n        children: [\n        'process',\n        {\n        children: ['__PAGE__', {}, {\n          page: [() => Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./app/process/page.tsx */ \"(rsc)/./app/process/page.tsx\")), \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\"],\n          \n        }]\n      },\n        {\n        \n        \n      }\n      ]\n      },\n        {\n        'layout': [() => Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./app/layout.tsx */ \"(rsc)/./app/layout.tsx\")), \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\"],\n'not-found': [() => Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! next/dist/client/components/not-found-error */ \"(rsc)/./node_modules/next/dist/client/components/not-found-error.js\", 23)), \"next/dist/client/components/not-found-error\"],\n        \n      }\n      ]\n      }.children;\nconst pages = [\"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\"];\n\n\nconst __next_app_require__ = __webpack_require__\nconst __next_app_load_chunk__ = () => Promise.resolve()\nconst originalPathname = \"/process/page\";\nconst __next_app__ = {\n    require: __next_app_require__,\n    loadChunk: __next_app_load_chunk__\n};\n\n// Create and export the route module that will be consumed.\nconst routeModule = new next_dist_server_future_route_modules_app_page_module_compiled__WEBPACK_IMPORTED_MODULE_0__.AppPageRouteModule({\n    definition: {\n        kind: next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__.RouteKind.APP_PAGE,\n        page: \"/process/page\",\n        pathname: \"/process\",\n        // The following aren't used in production.\n        bundlePath: \"\",\n        filename: \"\",\n        appPaths: []\n    },\n    userland: {\n        loaderTree: tree\n    }\n});\n\n//# sourceMappingURL=app-page.js.map//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWFwcC1sb2FkZXIuanM/bmFtZT1hcHAlMkZwcm9jZXNzJTJGcGFnZSZwYWdlPSUyRnByb2Nlc3MlMkZwYWdlJmFwcFBhdGhzPSUyRnByb2Nlc3MlMkZwYWdlJnBhZ2VQYXRoPXByaXZhdGUtbmV4dC1hcHAtZGlyJTJGcHJvY2VzcyUyRnBhZ2UudHN4JmFwcERpcj1EJTNBJTVDUHJvamVjdHMlNUNBdXRvU3RyYXRhLmFpJTVDQ29tcGFueVdlYnNpdGUlNUNhcHAmcGFnZUV4dGVuc2lvbnM9dHN4JnBhZ2VFeHRlbnNpb25zPXRzJnBhZ2VFeHRlbnNpb25zPWpzeCZwYWdlRXh0ZW5zaW9ucz1qcyZyb290RGlyPUQlM0ElNUNQcm9qZWN0cyU1Q0F1dG9TdHJhdGEuYWklNUNDb21wYW55V2Vic2l0ZSZpc0Rldj10cnVlJnRzY29uZmlnUGF0aD10c2NvbmZpZy5qc29uJmJhc2VQYXRoPSZhc3NldFByZWZpeD0mbmV4dENvbmZpZ091dHB1dD0mcHJlZmVycmVkUmVnaW9uPSZtaWRkbGV3YXJlQ29uZmlnPWUzMCUzRCEiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLGFBQWEsc0JBQXNCO0FBQ2lFO0FBQ3JDO0FBQy9EO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGlDQUFpQztBQUNqQyx1QkFBdUIsd0pBQXdHO0FBQy9IO0FBQ0EsU0FBUztBQUNULE9BQU87QUFDUDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsT0FBTztBQUNQO0FBQ0EseUJBQXlCLDRJQUFpRztBQUMxSCxvQkFBb0IsME5BQWdGO0FBQ3BHO0FBQ0E7QUFDQTtBQUNBLE9BQU87QUFDUDtBQUN1QjtBQUM2RDtBQUNwRiw2QkFBNkIsbUJBQW1CO0FBQ2hEO0FBQ087QUFDQTtBQUNQO0FBQ0E7QUFDQTtBQUN1RDtBQUN2RDtBQUNPLHdCQUF3Qiw4R0FBa0I7QUFDakQ7QUFDQSxjQUFjLHlFQUFTO0FBQ3ZCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBQUs7QUFDTDtBQUNBO0FBQ0E7QUFDQSxDQUFDOztBQUVEIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXV0b3N0cmF0YS13ZWIvPzQzYTgiXSwic291cmNlc0NvbnRlbnQiOlsiXCJUVVJCT1BBQ0sgeyB0cmFuc2l0aW9uOiBuZXh0LXNzciB9XCI7XG5pbXBvcnQgeyBBcHBQYWdlUm91dGVNb2R1bGUgfSBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9mdXR1cmUvcm91dGUtbW9kdWxlcy9hcHAtcGFnZS9tb2R1bGUuY29tcGlsZWRcIjtcbmltcG9ydCB7IFJvdXRlS2luZCB9IGZyb20gXCJuZXh0L2Rpc3Qvc2VydmVyL2Z1dHVyZS9yb3V0ZS1raW5kXCI7XG4vLyBXZSBpbmplY3QgdGhlIHRyZWUgYW5kIHBhZ2VzIGhlcmUgc28gdGhhdCB3ZSBjYW4gdXNlIHRoZW0gaW4gdGhlIHJvdXRlXG4vLyBtb2R1bGUuXG5jb25zdCB0cmVlID0ge1xuICAgICAgICBjaGlsZHJlbjogW1xuICAgICAgICAnJyxcbiAgICAgICAge1xuICAgICAgICBjaGlsZHJlbjogW1xuICAgICAgICAncHJvY2VzcycsXG4gICAgICAgIHtcbiAgICAgICAgY2hpbGRyZW46IFsnX19QQUdFX18nLCB7fSwge1xuICAgICAgICAgIHBhZ2U6IFsoKSA9PiBpbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIkQ6XFxcXFByb2plY3RzXFxcXEF1dG9TdHJhdGEuYWlcXFxcQ29tcGFueVdlYnNpdGVcXFxcYXBwXFxcXHByb2Nlc3NcXFxccGFnZS50c3hcIiksIFwiRDpcXFxcUHJvamVjdHNcXFxcQXV0b1N0cmF0YS5haVxcXFxDb21wYW55V2Vic2l0ZVxcXFxhcHBcXFxccHJvY2Vzc1xcXFxwYWdlLnRzeFwiXSxcbiAgICAgICAgICBcbiAgICAgICAgfV1cbiAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgXG4gICAgICAgIFxuICAgICAgfVxuICAgICAgXVxuICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAnbGF5b3V0JzogWygpID0+IGltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiRDpcXFxcUHJvamVjdHNcXFxcQXV0b1N0cmF0YS5haVxcXFxDb21wYW55V2Vic2l0ZVxcXFxhcHBcXFxcbGF5b3V0LnRzeFwiKSwgXCJEOlxcXFxQcm9qZWN0c1xcXFxBdXRvU3RyYXRhLmFpXFxcXENvbXBhbnlXZWJzaXRlXFxcXGFwcFxcXFxsYXlvdXQudHN4XCJdLFxuJ25vdC1mb3VuZCc6IFsoKSA9PiBpbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIm5leHQvZGlzdC9jbGllbnQvY29tcG9uZW50cy9ub3QtZm91bmQtZXJyb3JcIiksIFwibmV4dC9kaXN0L2NsaWVudC9jb21wb25lbnRzL25vdC1mb3VuZC1lcnJvclwiXSxcbiAgICAgICAgXG4gICAgICB9XG4gICAgICBdXG4gICAgICB9LmNoaWxkcmVuO1xuY29uc3QgcGFnZXMgPSBbXCJEOlxcXFxQcm9qZWN0c1xcXFxBdXRvU3RyYXRhLmFpXFxcXENvbXBhbnlXZWJzaXRlXFxcXGFwcFxcXFxwcm9jZXNzXFxcXHBhZ2UudHN4XCJdO1xuZXhwb3J0IHsgdHJlZSwgcGFnZXMgfTtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgR2xvYmFsRXJyb3IgfSBmcm9tIFwibmV4dC9kaXN0L2NsaWVudC9jb21wb25lbnRzL2Vycm9yLWJvdW5kYXJ5XCI7XG5jb25zdCBfX25leHRfYXBwX3JlcXVpcmVfXyA9IF9fd2VicGFja19yZXF1aXJlX19cbmNvbnN0IF9fbmV4dF9hcHBfbG9hZF9jaHVua19fID0gKCkgPT4gUHJvbWlzZS5yZXNvbHZlKClcbmV4cG9ydCBjb25zdCBvcmlnaW5hbFBhdGhuYW1lID0gXCIvcHJvY2Vzcy9wYWdlXCI7XG5leHBvcnQgY29uc3QgX19uZXh0X2FwcF9fID0ge1xuICAgIHJlcXVpcmU6IF9fbmV4dF9hcHBfcmVxdWlyZV9fLFxuICAgIGxvYWRDaHVuazogX19uZXh0X2FwcF9sb2FkX2NodW5rX19cbn07XG5leHBvcnQgKiBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9hcHAtcmVuZGVyL2VudHJ5LWJhc2VcIjtcbi8vIENyZWF0ZSBhbmQgZXhwb3J0IHRoZSByb3V0ZSBtb2R1bGUgdGhhdCB3aWxsIGJlIGNvbnN1bWVkLlxuZXhwb3J0IGNvbnN0IHJvdXRlTW9kdWxlID0gbmV3IEFwcFBhZ2VSb3V0ZU1vZHVsZSh7XG4gICAgZGVmaW5pdGlvbjoge1xuICAgICAgICBraW5kOiBSb3V0ZUtpbmQuQVBQX1BBR0UsXG4gICAgICAgIHBhZ2U6IFwiL3Byb2Nlc3MvcGFnZVwiLFxuICAgICAgICBwYXRobmFtZTogXCIvcHJvY2Vzc1wiLFxuICAgICAgICAvLyBUaGUgZm9sbG93aW5nIGFyZW4ndCB1c2VkIGluIHByb2R1Y3Rpb24uXG4gICAgICAgIGJ1bmRsZVBhdGg6IFwiXCIsXG4gICAgICAgIGZpbGVuYW1lOiBcIlwiLFxuICAgICAgICBhcHBQYXRoczogW11cbiAgICB9LFxuICAgIHVzZXJsYW5kOiB7XG4gICAgICAgIGxvYWRlclRyZWU6IHRyZWVcbiAgICB9XG59KTtcblxuLy8jIHNvdXJjZU1hcHBpbmdVUkw9YXBwLXBhZ2UuanMubWFwIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fprocess%2Fpage&page=%2Fprocess%2Fpage&appPaths=%2Fprocess%2Fpage&pagePath=private-next-app-dir%2Fprocess%2Fpage.tsx&appDir=D%3A%5CProjects%5CAutoStrata.ai%5CCompanyWebsite%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CProjects%5CAutoStrata.ai%5CCompanyWebsite&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!\n");
+
+/***/ }),
+
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Ccomponents%5C%5CAnimatedSection.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true!":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Ccomponents%5C%5CAnimatedSection.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true! ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./components/AnimatedSection.tsx */ \"(ssr)/./components/AnimatedSection.tsx\"));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMkQlM0ElNUMlNUNQcm9qZWN0cyU1QyU1Q0F1dG9TdHJhdGEuYWklNUMlNUNDb21wYW55V2Vic2l0ZSU1QyU1Q2NvbXBvbmVudHMlNUMlNUNBbmltYXRlZFNlY3Rpb24udHN4JTIyJTJDJTIyaWRzJTIyJTNBJTVCJTIyZGVmYXVsdCUyMiU1RCU3RCZzZXJ2ZXI9dHJ1ZSEiLCJtYXBwaW5ncyI6IkFBQUEsNEtBQThJIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXV0b3N0cmF0YS13ZWIvPzY0MmQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIsIHdlYnBhY2tFeHBvcnRzOiBbXCJkZWZhdWx0XCJdICovIFwiRDpcXFxcUHJvamVjdHNcXFxcQXV0b1N0cmF0YS5haVxcXFxDb21wYW55V2Vic2l0ZVxcXFxjb21wb25lbnRzXFxcXEFuaW1hdGVkU2VjdGlvbi50c3hcIik7XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Ccomponents%5C%5CAnimatedSection.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true!\n");
+
+/***/ }),
+
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Ccomponents%5C%5CNavBar.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cfont%5C%5Cgoogle%5C%5Ctarget.css%3F%7B%5C%22path%5C%22%3A%5C%22app%5C%5C%5C%5Clayout.tsx%5C%22%2C%5C%22import%5C%22%3A%5C%22Inter%5C%22%2C%5C%22arguments%5C%22%3A%5B%7B%5C%22subsets%5C%22%3A%5B%5C%22latin%5C%22%5D%7D%5D%2C%5C%22variableName%5C%22%3A%5C%22inter%5C%22%7D%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Capp%5C%5Cglobals.css%22%2C%22ids%22%3A%5B%5D%7D&server=true!":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Ccomponents%5C%5CNavBar.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cfont%5C%5Cgoogle%5C%5Ctarget.css%3F%7B%5C%22path%5C%22%3A%5C%22app%5C%5C%5C%5Clayout.tsx%5C%22%2C%5C%22import%5C%22%3A%5C%22Inter%5C%22%2C%5C%22arguments%5C%22%3A%5B%7B%5C%22subsets%5C%22%3A%5B%5C%22latin%5C%22%5D%7D%5D%2C%5C%22variableName%5C%22%3A%5C%22inter%5C%22%7D%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Capp%5C%5Cglobals.css%22%2C%22ids%22%3A%5B%5D%7D&server=true! ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./components/NavBar.tsx */ \"(ssr)/./components/NavBar.tsx\"));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMkQlM0ElNUMlNUNQcm9qZWN0cyU1QyU1Q0F1dG9TdHJhdGEuYWklNUMlNUNDb21wYW55V2Vic2l0ZSU1QyU1Q2NvbXBvbmVudHMlNUMlNUNOYXZCYXIudHN4JTIyJTJDJTIyaWRzJTIyJTNBJTVCJTIyZGVmYXVsdCUyMiU1RCU3RCZtb2R1bGVzPSU3QiUyMnJlcXVlc3QlMjIlM0ElMjJEJTNBJTVDJTVDUHJvamVjdHMlNUMlNUNBdXRvU3RyYXRhLmFpJTVDJTVDQ29tcGFueVdlYnNpdGUlNUMlNUNub2RlX21vZHVsZXMlNUMlNUNuZXh0JTVDJTVDZm9udCU1QyU1Q2dvb2dsZSU1QyU1Q3RhcmdldC5jc3MlM0YlN0IlNUMlMjJwYXRoJTVDJTIyJTNBJTVDJTIyYXBwJTVDJTVDJTVDJTVDbGF5b3V0LnRzeCU1QyUyMiUyQyU1QyUyMmltcG9ydCU1QyUyMiUzQSU1QyUyMkludGVyJTVDJTIyJTJDJTVDJTIyYXJndW1lbnRzJTVDJTIyJTNBJTVCJTdCJTVDJTIyc3Vic2V0cyU1QyUyMiUzQSU1QiU1QyUyMmxhdGluJTVDJTIyJTVEJTdEJTVEJTJDJTVDJTIydmFyaWFibGVOYW1lJTVDJTIyJTNBJTVDJTIyaW50ZXIlNUMlMjIlN0QlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0QmbW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyRCUzQSU1QyU1Q1Byb2plY3RzJTVDJTVDQXV0b1N0cmF0YS5haSU1QyU1Q0NvbXBhbnlXZWJzaXRlJTVDJTVDYXBwJTVDJTVDZ2xvYmFscy5jc3MlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0Qmc2VydmVyPXRydWUhIiwibWFwcGluZ3MiOiJBQUFBLDBKQUFxSSIsInNvdXJjZXMiOlsid2VicGFjazovL2F1dG9zdHJhdGEtd2ViLz85MDE2Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiLCB3ZWJwYWNrRXhwb3J0czogW1wiZGVmYXVsdFwiXSAqLyBcIkQ6XFxcXFByb2plY3RzXFxcXEF1dG9TdHJhdGEuYWlcXFxcQ29tcGFueVdlYnNpdGVcXFxcY29tcG9uZW50c1xcXFxOYXZCYXIudHN4XCIpO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Ccomponents%5C%5CNavBar.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cfont%5C%5Cgoogle%5C%5Ctarget.css%3F%7B%5C%22path%5C%22%3A%5C%22app%5C%5C%5C%5Clayout.tsx%5C%22%2C%5C%22import%5C%22%3A%5C%22Inter%5C%22%2C%5C%22arguments%5C%22%3A%5B%7B%5C%22subsets%5C%22%3A%5B%5C%22latin%5C%22%5D%7D%5D%2C%5C%22variableName%5C%22%3A%5C%22inter%5C%22%7D%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Capp%5C%5Cglobals.css%22%2C%22ids%22%3A%5B%5D%7D&server=true!\n");
+
+/***/ }),
+
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Capp-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cclient-page.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cerror-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Clayout-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cnot-found-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Crender-from-template-context.js%22%2C%22ids%22%3A%5B%5D%7D&server=true!":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Capp-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cclient-page.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cerror-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Clayout-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cnot-found-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Crender-from-template-context.js%22%2C%22ids%22%3A%5B%5D%7D&server=true! ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/app-router.js */ \"(ssr)/./node_modules/next/dist/client/components/app-router.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/client-page.js */ \"(ssr)/./node_modules/next/dist/client/components/client-page.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/error-boundary.js */ \"(ssr)/./node_modules/next/dist/client/components/error-boundary.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/layout-router.js */ \"(ssr)/./node_modules/next/dist/client/components/layout-router.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/not-found-boundary.js */ \"(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/render-from-template-context.js */ \"(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js\", 23));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMkQlM0ElNUMlNUNQcm9qZWN0cyU1QyU1Q0F1dG9TdHJhdGEuYWklNUMlNUNDb21wYW55V2Vic2l0ZSU1QyU1Q25vZGVfbW9kdWxlcyU1QyU1Q25leHQlNUMlNUNkaXN0JTVDJTVDY2xpZW50JTVDJTVDY29tcG9uZW50cyU1QyU1Q2FwcC1yb3V0ZXIuanMlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0QmbW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyRCUzQSU1QyU1Q1Byb2plY3RzJTVDJTVDQXV0b1N0cmF0YS5haSU1QyU1Q0NvbXBhbnlXZWJzaXRlJTVDJTVDbm9kZV9tb2R1bGVzJTVDJTVDbmV4dCU1QyU1Q2Rpc3QlNUMlNUNjbGllbnQlNUMlNUNjb21wb25lbnRzJTVDJTVDY2xpZW50LXBhZ2UuanMlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0QmbW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyRCUzQSU1QyU1Q1Byb2plY3RzJTVDJTVDQXV0b1N0cmF0YS5haSU1QyU1Q0NvbXBhbnlXZWJzaXRlJTVDJTVDbm9kZV9tb2R1bGVzJTVDJTVDbmV4dCU1QyU1Q2Rpc3QlNUMlNUNjbGllbnQlNUMlNUNjb21wb25lbnRzJTVDJTVDZXJyb3ItYm91bmRhcnkuanMlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0QmbW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyRCUzQSU1QyU1Q1Byb2plY3RzJTVDJTVDQXV0b1N0cmF0YS5haSU1QyU1Q0NvbXBhbnlXZWJzaXRlJTVDJTVDbm9kZV9tb2R1bGVzJTVDJTVDbmV4dCU1QyU1Q2Rpc3QlNUMlNUNjbGllbnQlNUMlNUNjb21wb25lbnRzJTVDJTVDbGF5b3V0LXJvdXRlci5qcyUyMiUyQyUyMmlkcyUyMiUzQSU1QiU1RCU3RCZtb2R1bGVzPSU3QiUyMnJlcXVlc3QlMjIlM0ElMjJEJTNBJTVDJTVDUHJvamVjdHMlNUMlNUNBdXRvU3RyYXRhLmFpJTVDJTVDQ29tcGFueVdlYnNpdGUlNUMlNUNub2RlX21vZHVsZXMlNUMlNUNuZXh0JTVDJTVDZGlzdCU1QyU1Q2NsaWVudCU1QyU1Q2NvbXBvbmVudHMlNUMlNUNub3QtZm91bmQtYm91bmRhcnkuanMlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0QmbW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyRCUzQSU1QyU1Q1Byb2plY3RzJTVDJTVDQXV0b1N0cmF0YS5haSU1QyU1Q0NvbXBhbnlXZWJzaXRlJTVDJTVDbm9kZV9tb2R1bGVzJTVDJTVDbmV4dCU1QyU1Q2Rpc3QlNUMlNUNjbGllbnQlNUMlNUNjb21wb25lbnRzJTVDJTVDcmVuZGVyLWZyb20tdGVtcGxhdGUtY29udGV4dC5qcyUyMiUyQyUyMmlkcyUyMiUzQSU1QiU1RCU3RCZzZXJ2ZXI9dHJ1ZSEiLCJtYXBwaW5ncyI6IkFBQUEsa09BQTZJO0FBQzdJO0FBQ0Esb09BQThJO0FBQzlJO0FBQ0EsME9BQWlKO0FBQ2pKO0FBQ0Esd09BQWdKO0FBQ2hKO0FBQ0Esa1BBQXFKO0FBQ3JKO0FBQ0Esc1FBQStKIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXV0b3N0cmF0YS13ZWIvPzVjMmMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCJEOlxcXFxQcm9qZWN0c1xcXFxBdXRvU3RyYXRhLmFpXFxcXENvbXBhbnlXZWJzaXRlXFxcXG5vZGVfbW9kdWxlc1xcXFxuZXh0XFxcXGRpc3RcXFxcY2xpZW50XFxcXGNvbXBvbmVudHNcXFxcYXBwLXJvdXRlci5qc1wiKTtcbjtcbmltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiRDpcXFxcUHJvamVjdHNcXFxcQXV0b1N0cmF0YS5haVxcXFxDb21wYW55V2Vic2l0ZVxcXFxub2RlX21vZHVsZXNcXFxcbmV4dFxcXFxkaXN0XFxcXGNsaWVudFxcXFxjb21wb25lbnRzXFxcXGNsaWVudC1wYWdlLmpzXCIpO1xuO1xuaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCJEOlxcXFxQcm9qZWN0c1xcXFxBdXRvU3RyYXRhLmFpXFxcXENvbXBhbnlXZWJzaXRlXFxcXG5vZGVfbW9kdWxlc1xcXFxuZXh0XFxcXGRpc3RcXFxcY2xpZW50XFxcXGNvbXBvbmVudHNcXFxcZXJyb3ItYm91bmRhcnkuanNcIik7XG47XG5pbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIkQ6XFxcXFByb2plY3RzXFxcXEF1dG9TdHJhdGEuYWlcXFxcQ29tcGFueVdlYnNpdGVcXFxcbm9kZV9tb2R1bGVzXFxcXG5leHRcXFxcZGlzdFxcXFxjbGllbnRcXFxcY29tcG9uZW50c1xcXFxsYXlvdXQtcm91dGVyLmpzXCIpO1xuO1xuaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCJEOlxcXFxQcm9qZWN0c1xcXFxBdXRvU3RyYXRhLmFpXFxcXENvbXBhbnlXZWJzaXRlXFxcXG5vZGVfbW9kdWxlc1xcXFxuZXh0XFxcXGRpc3RcXFxcY2xpZW50XFxcXGNvbXBvbmVudHNcXFxcbm90LWZvdW5kLWJvdW5kYXJ5LmpzXCIpO1xuO1xuaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCJEOlxcXFxQcm9qZWN0c1xcXFxBdXRvU3RyYXRhLmFpXFxcXENvbXBhbnlXZWJzaXRlXFxcXG5vZGVfbW9kdWxlc1xcXFxuZXh0XFxcXGRpc3RcXFxcY2xpZW50XFxcXGNvbXBvbmVudHNcXFxccmVuZGVyLWZyb20tdGVtcGxhdGUtY29udGV4dC5qc1wiKTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Capp-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cclient-page.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cerror-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Clayout-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Cnot-found-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22D%3A%5C%5CProjects%5C%5CAutoStrata.ai%5C%5CCompanyWebsite%5C%5Cnode_modules%5C%5Cnext%5C%5Cdist%5C%5Cclient%5C%5Ccomponents%5C%5Crender-from-template-context.js%22%2C%22ids%22%3A%5B%5D%7D&server=true!\n");
+
+/***/ }),
+
+/***/ "(ssr)/./components/AnimatedSection.tsx":
+/*!****************************************!*\
+  !*** ./components/AnimatedSection.tsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ AnimatedSection)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ \"(ssr)/./node_modules/framer-motion/dist/es/render/dom/motion.mjs\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\nfunction AnimatedSection({ children, delay = 0 }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.section, {\n        initial: {\n            opacity: 0,\n            y: 16\n        },\n        whileInView: {\n            opacity: 1,\n            y: 0\n        },\n        viewport: {\n            once: true,\n            margin: \"-80px\"\n        },\n        transition: {\n            duration: .7,\n            ease: \"easeOut\",\n            delay\n        },\n        className: \"section container\",\n        children: children\n    }, void 0, false, {\n        fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\AnimatedSection.tsx\",\n        lineNumber: 6,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9jb21wb25lbnRzL0FuaW1hdGVkU2VjdGlvbi50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFDdUM7QUFFeEIsU0FBU0MsZ0JBQWdCLEVBQUVDLFFBQVEsRUFBRUMsUUFBTSxDQUFDLEVBQWdEO0lBQ3pHLHFCQUNFLDhEQUFDSCxpREFBTUEsQ0FBQ0ksT0FBTztRQUNiQyxTQUFTO1lBQUVDLFNBQVM7WUFBR0MsR0FBRztRQUFHO1FBQzdCQyxhQUFhO1lBQUVGLFNBQVM7WUFBR0MsR0FBRztRQUFFO1FBQ2hDRSxVQUFVO1lBQUVDLE1BQU07WUFBTUMsUUFBUTtRQUFRO1FBQ3hDQyxZQUFZO1lBQUVDLFVBQVU7WUFBSUMsTUFBTTtZQUFXWDtRQUFNO1FBQ25EWSxXQUFVO2tCQUVUYjs7Ozs7O0FBR1AiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hdXRvc3RyYXRhLXdlYi8uL2NvbXBvbmVudHMvQW5pbWF0ZWRTZWN0aW9uLnRzeD8zZWFiIl0sInNvdXJjZXNDb250ZW50IjpbIid1c2UgY2xpZW50J1xuaW1wb3J0IHsgbW90aW9uIH0gZnJvbSAnZnJhbWVyLW1vdGlvbic7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEFuaW1hdGVkU2VjdGlvbih7IGNoaWxkcmVuLCBkZWxheT0wIH06eyBjaGlsZHJlbjogUmVhY3QuUmVhY3ROb2RlLCBkZWxheT86IG51bWJlciB9KXtcbiAgcmV0dXJuIChcbiAgICA8bW90aW9uLnNlY3Rpb25cbiAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogMTYgfX1cbiAgICAgIHdoaWxlSW5WaWV3PXt7IG9wYWNpdHk6IDEsIHk6IDAgfX1cbiAgICAgIHZpZXdwb3J0PXt7IG9uY2U6IHRydWUsIG1hcmdpbjogXCItODBweFwiIH19XG4gICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAuNywgZWFzZTogXCJlYXNlT3V0XCIsIGRlbGF5IH19XG4gICAgICBjbGFzc05hbWU9XCJzZWN0aW9uIGNvbnRhaW5lclwiXG4gICAgPlxuICAgICAge2NoaWxkcmVufVxuICAgIDwvbW90aW9uLnNlY3Rpb24+XG4gICk7XG59XG4iXSwibmFtZXMiOlsibW90aW9uIiwiQW5pbWF0ZWRTZWN0aW9uIiwiY2hpbGRyZW4iLCJkZWxheSIsInNlY3Rpb24iLCJpbml0aWFsIiwib3BhY2l0eSIsInkiLCJ3aGlsZUluVmlldyIsInZpZXdwb3J0Iiwib25jZSIsIm1hcmdpbiIsInRyYW5zaXRpb24iLCJkdXJhdGlvbiIsImVhc2UiLCJjbGFzc05hbWUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./components/AnimatedSection.tsx\n");
+
+/***/ }),
+
+/***/ "(ssr)/./components/NavBar.tsx":
+/*!*******************************!*\
+  !*** ./components/NavBar.tsx ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ NavBar)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ \"(ssr)/./node_modules/next/dist/api/link.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_WalletConnect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/WalletConnect */ \"(ssr)/./components/WalletConnect.tsx\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nfunction NavBar() {\n    const [open, setOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"header\", {\n        className: \"sticky top-0 z-50 bg-[#070b18b3] backdrop-blur-md border-b border-white/10\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"container flex items-center justify-between py-3\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_link__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n                    href: \"/\",\n                    className: \"flex items-center gap-2 font-extrabold tracking-wide\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                            src: \"/logo.svg\",\n                            className: \"w-7 h-7\",\n                            alt: \"\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                            lineNumber: 12,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                            children: [\n                                \"AutoStrata\",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                    className: \"text-brand\",\n                                    children: \".ai\"\n                                }, void 0, false, {\n                                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                                    lineNumber: 13,\n                                    columnNumber: 27\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                            lineNumber: 13,\n                            columnNumber: 11\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                    lineNumber: 11,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                    className: \"md:hidden border border-white/20 px-2 py-1 rounded\",\n                    onClick: ()=>setOpen(!open),\n                    \"aria-expanded\": open,\n                    children: \"☰\"\n                }, void 0, false, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                    lineNumber: 15,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"nav\", {\n                    className: `md:flex items-center gap-4 ${open ? \"flex flex-col absolute left-0 right-0 top-12 bg-[#0c1226] p-3 border-b border-white/10\" : \"hidden md:flex\"}`,\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_link__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n                            href: \"/about\",\n                            className: \"opacity-90 hover:opacity-100\",\n                            children: \"About\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                            lineNumber: 17,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_link__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n                            href: \"/services\",\n                            className: \"opacity-90 hover:opacity-100\",\n                            children: \"Services\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                            lineNumber: 18,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_link__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n                            href: \"/process\",\n                            className: \"opacity-90 hover:opacity-100\",\n                            children: \"Process\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                            lineNumber: 19,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_link__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n                            href: \"/contact\",\n                            className: \"opacity-90 hover:opacity-100\",\n                            children: \"Contact\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                            lineNumber: 20,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_WalletConnect__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {}, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                            lineNumber: 21,\n                            columnNumber: 11\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n                    lineNumber: 16,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n            lineNumber: 10,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\NavBar.tsx\",\n        lineNumber: 9,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9jb21wb25lbnRzL05hdkJhci50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFDNkI7QUFDSTtBQUNzQjtBQUV4QyxTQUFTRztJQUN0QixNQUFNLENBQUNDLE1BQU1DLFFBQVEsR0FBR0osK0NBQVFBLENBQUM7SUFDakMscUJBQ0UsOERBQUNLO1FBQU9DLFdBQVU7a0JBQ2hCLDRFQUFDQztZQUFJRCxXQUFVOzs4QkFDYiw4REFBQ1AsaURBQUlBO29CQUFDUyxNQUFLO29CQUFJRixXQUFVOztzQ0FDdkIsOERBQUNHOzRCQUFJQyxLQUFJOzRCQUFZSixXQUFVOzRCQUFVSyxLQUFJOzs7Ozs7c0NBQzdDLDhEQUFDQzs7Z0NBQUs7OENBQVUsOERBQUNBO29DQUFLTixXQUFVOzhDQUFhOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OEJBRS9DLDhEQUFDTztvQkFBT1AsV0FBVTtvQkFBcURRLFNBQVMsSUFBSVYsUUFBUSxDQUFDRDtvQkFBT1ksaUJBQWVaOzhCQUFNOzs7Ozs7OEJBQ3pILDhEQUFDYTtvQkFBSVYsV0FBVyxDQUFDLDJCQUEyQixFQUFFSCxPQUFPLDJGQUEyRixpQkFBaUIsQ0FBQzs7c0NBQ2hLLDhEQUFDSixpREFBSUE7NEJBQUNTLE1BQUs7NEJBQVNGLFdBQVU7c0NBQStCOzs7Ozs7c0NBQzdELDhEQUFDUCxpREFBSUE7NEJBQUNTLE1BQUs7NEJBQVlGLFdBQVU7c0NBQStCOzs7Ozs7c0NBQ2hFLDhEQUFDUCxpREFBSUE7NEJBQUNTLE1BQUs7NEJBQVdGLFdBQVU7c0NBQStCOzs7Ozs7c0NBQy9ELDhEQUFDUCxpREFBSUE7NEJBQUNTLE1BQUs7NEJBQVdGLFdBQVU7c0NBQStCOzs7Ozs7c0NBQy9ELDhEQUFDTCxpRUFBYUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLeEIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hdXRvc3RyYXRhLXdlYi8uL2NvbXBvbmVudHMvTmF2QmFyLnRzeD8zMDIyIl0sInNvdXJjZXNDb250ZW50IjpbIid1c2UgY2xpZW50J1xuaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xuaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBXYWxsZXRDb25uZWN0IGZyb20gXCJAL2NvbXBvbmVudHMvV2FsbGV0Q29ubmVjdFwiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBOYXZCYXIoKXtcbiAgY29uc3QgW29wZW4sIHNldE9wZW5dID0gdXNlU3RhdGUoZmFsc2UpO1xuICByZXR1cm4gKFxuICAgIDxoZWFkZXIgY2xhc3NOYW1lPVwic3RpY2t5IHRvcC0wIHotNTAgYmctWyMwNzBiMThiM10gYmFja2Ryb3AtYmx1ci1tZCBib3JkZXItYiBib3JkZXItd2hpdGUvMTBcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweS0zXCI+XG4gICAgICAgIDxMaW5rIGhyZWY9XCIvXCIgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgZm9udC1leHRyYWJvbGQgdHJhY2tpbmctd2lkZVwiPlxuICAgICAgICAgIDxpbWcgc3JjPVwiL2xvZ28uc3ZnXCIgY2xhc3NOYW1lPVwidy03IGgtN1wiIGFsdD1cIlwiIC8+XG4gICAgICAgICAgPHNwYW4+QXV0b1N0cmF0YTxzcGFuIGNsYXNzTmFtZT1cInRleHQtYnJhbmRcIj4uYWk8L3NwYW4+PC9zcGFuPlxuICAgICAgICA8L0xpbms+XG4gICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwibWQ6aGlkZGVuIGJvcmRlciBib3JkZXItd2hpdGUvMjAgcHgtMiBweS0xIHJvdW5kZWRcIiBvbkNsaWNrPXsoKT0+c2V0T3Blbighb3Blbil9IGFyaWEtZXhwYW5kZWQ9e29wZW59PuKYsDwvYnV0dG9uPlxuICAgICAgICA8bmF2IGNsYXNzTmFtZT17YG1kOmZsZXggaXRlbXMtY2VudGVyIGdhcC00ICR7b3BlbiA/IFwiZmxleCBmbGV4LWNvbCBhYnNvbHV0ZSBsZWZ0LTAgcmlnaHQtMCB0b3AtMTIgYmctWyMwYzEyMjZdIHAtMyBib3JkZXItYiBib3JkZXItd2hpdGUvMTBcIiA6IFwiaGlkZGVuIG1kOmZsZXhcIn1gfT5cbiAgICAgICAgICA8TGluayBocmVmPVwiL2Fib3V0XCIgY2xhc3NOYW1lPVwib3BhY2l0eS05MCBob3ZlcjpvcGFjaXR5LTEwMFwiPkFib3V0PC9MaW5rPlxuICAgICAgICAgIDxMaW5rIGhyZWY9XCIvc2VydmljZXNcIiBjbGFzc05hbWU9XCJvcGFjaXR5LTkwIGhvdmVyOm9wYWNpdHktMTAwXCI+U2VydmljZXM8L0xpbms+XG4gICAgICAgICAgPExpbmsgaHJlZj1cIi9wcm9jZXNzXCIgY2xhc3NOYW1lPVwib3BhY2l0eS05MCBob3ZlcjpvcGFjaXR5LTEwMFwiPlByb2Nlc3M8L0xpbms+XG4gICAgICAgICAgPExpbmsgaHJlZj1cIi9jb250YWN0XCIgY2xhc3NOYW1lPVwib3BhY2l0eS05MCBob3ZlcjpvcGFjaXR5LTEwMFwiPkNvbnRhY3Q8L0xpbms+XG4gICAgICAgICAgPFdhbGxldENvbm5lY3QgLz5cbiAgICAgICAgPC9uYXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2hlYWRlcj5cbiAgKTtcbn1cbiJdLCJuYW1lcyI6WyJMaW5rIiwidXNlU3RhdGUiLCJXYWxsZXRDb25uZWN0IiwiTmF2QmFyIiwib3BlbiIsInNldE9wZW4iLCJoZWFkZXIiLCJjbGFzc05hbWUiLCJkaXYiLCJocmVmIiwiaW1nIiwic3JjIiwiYWx0Iiwic3BhbiIsImJ1dHRvbiIsIm9uQ2xpY2siLCJhcmlhLWV4cGFuZGVkIiwibmF2Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./components/NavBar.tsx\n");
+
+/***/ }),
+
+/***/ "(ssr)/./components/WalletConnect.tsx":
+/*!**************************************!*\
+  !*** ./components/WalletConnect.tsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ WalletConnect)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _rainbow_me_rainbowkit_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @rainbow-me/rainbowkit/styles.css */ \"(ssr)/./node_modules/@rainbow-me/rainbowkit/dist/index.css\");\n/* harmony import */ var _rainbow_me_rainbowkit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @rainbow-me/rainbowkit */ \"(ssr)/./node_modules/@rainbow-me/rainbowkit/dist/index.js\");\n/* harmony import */ var wagmi__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! wagmi */ \"(ssr)/./node_modules/wagmi/dist/esm/context.js\");\n/* harmony import */ var wagmi_chains__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! wagmi/chains */ \"(ssr)/./node_modules/viem/_esm/chains/definitions/mainnet.js\");\n/* harmony import */ var wagmi_chains__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! wagmi/chains */ \"(ssr)/./node_modules/viem/_esm/chains/definitions/base.js\");\n/* harmony import */ var wagmi_chains__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! wagmi/chains */ \"(ssr)/./node_modules/viem/_esm/chains/definitions/polygon.js\");\n/* harmony import */ var wagmi_chains__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! wagmi/chains */ \"(ssr)/./node_modules/viem/_esm/chains/definitions/optimism.js\");\n/* harmony import */ var wagmi_chains__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! wagmi/chains */ \"(ssr)/./node_modules/viem/_esm/chains/definitions/arbitrum.js\");\n/* harmony import */ var wagmi_chains__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! wagmi/chains */ \"(ssr)/./node_modules/viem/_esm/chains/definitions/sepolia.js\");\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @tanstack/react-query */ \"(ssr)/./node_modules/@tanstack/query-core/build/modern/queryClient.js\");\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @tanstack/react-query */ \"(ssr)/./node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\n\n\nconst config = (0,_rainbow_me_rainbowkit__WEBPACK_IMPORTED_MODULE_2__.getDefaultConfig)({\n    appName: \"AutoStrata\",\n    projectId: \"AUTO-STRATA-DEMO\",\n    chains: [\n        wagmi_chains__WEBPACK_IMPORTED_MODULE_3__.mainnet,\n        wagmi_chains__WEBPACK_IMPORTED_MODULE_4__.base,\n        wagmi_chains__WEBPACK_IMPORTED_MODULE_5__.polygon,\n        wagmi_chains__WEBPACK_IMPORTED_MODULE_6__.optimism,\n        wagmi_chains__WEBPACK_IMPORTED_MODULE_7__.arbitrum,\n        wagmi_chains__WEBPACK_IMPORTED_MODULE_8__.sepolia\n    ],\n    ssr: true\n});\nconst queryClient = new _tanstack_react_query__WEBPACK_IMPORTED_MODULE_9__.QueryClient();\nfunction WalletConnect() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(wagmi__WEBPACK_IMPORTED_MODULE_10__.WagmiProvider, {\n        config: config,\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_11__.QueryClientProvider, {\n            client: queryClient,\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_rainbow_me_rainbowkit__WEBPACK_IMPORTED_MODULE_2__.RainbowKitProvider, {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_rainbow_me_rainbowkit__WEBPACK_IMPORTED_MODULE_2__.ConnectButton, {\n                    label: \"Connect wallet\",\n                    chainStatus: \"icon\",\n                    showBalance: false\n                }, void 0, false, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\WalletConnect.tsx\",\n                    lineNumber: 22,\n                    columnNumber: 11\n                }, this)\n            }, void 0, false, {\n                fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\WalletConnect.tsx\",\n                lineNumber: 21,\n                columnNumber: 9\n            }, this)\n        }, void 0, false, {\n            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\WalletConnect.tsx\",\n            lineNumber: 20,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\WalletConnect.tsx\",\n        lineNumber: 19,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9jb21wb25lbnRzL1dhbGxldENvbm5lY3QudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUMyQztBQUNrRDtBQUN2RDtBQUM2QztBQUNWO0FBRXpFLE1BQU1ZLFNBQVNaLHdFQUFnQkEsQ0FBQztJQUM5QmEsU0FBUztJQUNUQyxXQUFXO0lBQ1hDLFFBQVE7UUFBQ1gsaURBQU9BO1FBQUVJLDhDQUFJQTtRQUFFSCxpREFBT0E7UUFBRUMsa0RBQVFBO1FBQUVDLGtEQUFRQTtRQUFFRSxpREFBT0E7S0FBQztJQUM3RE8sS0FBSztBQUNQO0FBRUEsTUFBTUMsY0FBYyxJQUFJUCw4REFBV0E7QUFFcEIsU0FBU1E7SUFDdEIscUJBQ0UsOERBQUNmLGlEQUFhQTtRQUFDUyxRQUFRQTtrQkFDckIsNEVBQUNELHVFQUFtQkE7WUFBQ1EsUUFBUUY7c0JBQzNCLDRFQUFDaEIsc0VBQWtCQTswQkFDakIsNEVBQUNDLGlFQUFhQTtvQkFBQ2tCLE9BQU07b0JBQWlCQyxhQUFZO29CQUFPQyxhQUFhOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLaEYiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hdXRvc3RyYXRhLXdlYi8uL2NvbXBvbmVudHMvV2FsbGV0Q29ubmVjdC50c3g/OWJlZiJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCdcbmltcG9ydCAnQHJhaW5ib3ctbWUvcmFpbmJvd2tpdC9zdHlsZXMuY3NzJztcbmltcG9ydCB7IGdldERlZmF1bHRDb25maWcsIFJhaW5ib3dLaXRQcm92aWRlciwgQ29ubmVjdEJ1dHRvbiB9IGZyb20gJ0ByYWluYm93LW1lL3JhaW5ib3draXQnO1xuaW1wb3J0IHsgV2FnbWlQcm92aWRlciB9IGZyb20gJ3dhZ21pJztcbmltcG9ydCB7IG1haW5uZXQsIHBvbHlnb24sIG9wdGltaXNtLCBhcmJpdHJ1bSwgYmFzZSwgc2Vwb2xpYSB9IGZyb20gJ3dhZ21pL2NoYWlucyc7XG5pbXBvcnQgeyBRdWVyeUNsaWVudCwgUXVlcnlDbGllbnRQcm92aWRlciB9IGZyb20gJ0B0YW5zdGFjay9yZWFjdC1xdWVyeSc7XG5cbmNvbnN0IGNvbmZpZyA9IGdldERlZmF1bHRDb25maWcoe1xuICBhcHBOYW1lOiAnQXV0b1N0cmF0YScsXG4gIHByb2plY3RJZDogJ0FVVE8tU1RSQVRBLURFTU8nLCAvLyBSZXBsYWNlIHdpdGggeW91ciBXYWxsZXRDb25uZWN0IENsb3VkIElEIGZvciBwcm9kdWN0aW9uXG4gIGNoYWluczogW21haW5uZXQsIGJhc2UsIHBvbHlnb24sIG9wdGltaXNtLCBhcmJpdHJ1bSwgc2Vwb2xpYV0sXG4gIHNzcjogdHJ1ZSxcbn0pO1xuXG5jb25zdCBxdWVyeUNsaWVudCA9IG5ldyBRdWVyeUNsaWVudCgpO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBXYWxsZXRDb25uZWN0KCl7XG4gIHJldHVybiAoXG4gICAgPFdhZ21pUHJvdmlkZXIgY29uZmlnPXtjb25maWd9PlxuICAgICAgPFF1ZXJ5Q2xpZW50UHJvdmlkZXIgY2xpZW50PXtxdWVyeUNsaWVudH0+XG4gICAgICAgIDxSYWluYm93S2l0UHJvdmlkZXI+XG4gICAgICAgICAgPENvbm5lY3RCdXR0b24gbGFiZWw9XCJDb25uZWN0IHdhbGxldFwiIGNoYWluU3RhdHVzPVwiaWNvblwiIHNob3dCYWxhbmNlPXtmYWxzZX0gLz5cbiAgICAgICAgPC9SYWluYm93S2l0UHJvdmlkZXI+XG4gICAgICA8L1F1ZXJ5Q2xpZW50UHJvdmlkZXI+XG4gICAgPC9XYWdtaVByb3ZpZGVyPlxuICApO1xufVxuIl0sIm5hbWVzIjpbImdldERlZmF1bHRDb25maWciLCJSYWluYm93S2l0UHJvdmlkZXIiLCJDb25uZWN0QnV0dG9uIiwiV2FnbWlQcm92aWRlciIsIm1haW5uZXQiLCJwb2x5Z29uIiwib3B0aW1pc20iLCJhcmJpdHJ1bSIsImJhc2UiLCJzZXBvbGlhIiwiUXVlcnlDbGllbnQiLCJRdWVyeUNsaWVudFByb3ZpZGVyIiwiY29uZmlnIiwiYXBwTmFtZSIsInByb2plY3RJZCIsImNoYWlucyIsInNzciIsInF1ZXJ5Q2xpZW50IiwiV2FsbGV0Q29ubmVjdCIsImNsaWVudCIsImxhYmVsIiwiY2hhaW5TdGF0dXMiLCJzaG93QmFsYW5jZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./components/WalletConnect.tsx\n");
+
+/***/ }),
+
+/***/ "(rsc)/./app/globals.css":
+/*!*************************!*\
+  !*** ./app/globals.css ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"44d7f0675e0e\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvZ2xvYmFscy5jc3MiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLGNBQWM7QUFDN0IsSUFBSSxLQUFVLEVBQUUsRUFBdUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hdXRvc3RyYXRhLXdlYi8uL2FwcC9nbG9iYWxzLmNzcz80ODQ4Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiNDRkN2YwNjc1ZTBlXCJcbmlmIChtb2R1bGUuaG90KSB7IG1vZHVsZS5ob3QuYWNjZXB0KCkgfVxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./app/globals.css\n");
+
+/***/ }),
+
+/***/ "(rsc)/./app/layout.tsx":
+/*!************************!*\
+  !*** ./app/layout.tsx ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ RootLayout),\n/* harmony export */   metadata: () => (/* binding */ metadata)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_font_google_target_css_path_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/font/google/target.css?{\"path\":\"app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"} */ \"(rsc)/./node_modules/next/font/google/target.css?{\\\"path\\\":\\\"app\\\\\\\\layout.tsx\\\",\\\"import\\\":\\\"Inter\\\",\\\"arguments\\\":[{\\\"subsets\\\":[\\\"latin\\\"]}],\\\"variableName\\\":\\\"inter\\\"}\");\n/* harmony import */ var next_font_google_target_css_path_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_font_google_target_css_path_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./globals.css */ \"(rsc)/./app/globals.css\");\n/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/NavBar */ \"(rsc)/./components/NavBar.tsx\");\n/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/Footer */ \"(rsc)/./components/Footer.tsx\");\n\n\n\n\n\nconst metadata = {\n    metadataBase: new URL(\"https://autostrata.ai\"),\n    title: {\n        default: \"AutoStrata.ai — AI‑Powered IT Solutions\",\n        template: \"%s | AutoStrata.ai\"\n    },\n    description: \"Agentic AI, automation, data science, and full‑stack development without offshore outsourcing.\",\n    openGraph: {\n        title: \"AutoStrata.ai — AI‑Powered IT Solutions\",\n        description: \"Agentic AI, automation, data science, and full‑stack development.\",\n        url: \"https://autostrata.ai\",\n        siteName: \"AutoStrata.ai\",\n        images: [\n            \"/og-image.png\"\n        ],\n        type: \"website\"\n    },\n    twitter: {\n        card: \"summary_large_image\"\n    },\n    alternates: {\n        canonical: \"/\"\n    }\n};\nfunction RootLayout({ children }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"html\", {\n        lang: \"en\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"body\", {\n            className: (next_font_google_target_css_path_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_4___default().className),\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"bg-orbits\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                            className: \"orb orb-1\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\",\n                            lineNumber: 32,\n                            columnNumber: 36\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                            className: \"orb orb-2\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\",\n                            lineNumber: 32,\n                            columnNumber: 65\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                            className: \"orb orb-3\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\",\n                            lineNumber: 32,\n                            columnNumber: 94\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\",\n                    lineNumber: 32,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_NavBar__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\",\n                    lineNumber: 33,\n                    columnNumber: 9\n                }, this),\n                children,\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Footer__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {}, void 0, false, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\",\n                    lineNumber: 35,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\",\n            lineNumber: 31,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\layout.tsx\",\n        lineNumber: 30,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvbGF5b3V0LnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBTU1BO0FBTGlCO0FBRWtCO0FBQ0E7QUFJbEMsTUFBTUcsV0FBcUI7SUFDaENDLGNBQWMsSUFBSUMsSUFBSTtJQUN0QkMsT0FBTztRQUNMQyxTQUFTO1FBQ1RDLFVBQVU7SUFDWjtJQUNBQyxhQUFhO0lBQ2JDLFdBQVc7UUFDVEosT0FBTztRQUNQRyxhQUFhO1FBQ2JFLEtBQUs7UUFDTEMsVUFBVTtRQUNWQyxRQUFRO1lBQUM7U0FBZ0I7UUFDekJDLE1BQU07SUFDUjtJQUNBQyxTQUFTO1FBQUVDLE1BQU07SUFBc0I7SUFDdkNDLFlBQVk7UUFBRUMsV0FBVztJQUFJO0FBQy9CLEVBQUU7QUFFYSxTQUFTQyxXQUFXLEVBQUVDLFFBQVEsRUFBaUM7SUFDNUUscUJBQ0UsOERBQUNDO1FBQUtDLE1BQUs7a0JBQ1QsNEVBQUNDO1lBQUtDLFdBQVd4QiwySkFBZTs7OEJBQzlCLDhEQUFDeUI7b0JBQUlELFdBQVU7O3NDQUFZLDhEQUFDRTs0QkFBS0YsV0FBVTs7Ozs7O3NDQUFhLDhEQUFDRTs0QkFBS0YsV0FBVTs7Ozs7O3NDQUFhLDhEQUFDRTs0QkFBS0YsV0FBVTs7Ozs7Ozs7Ozs7OzhCQUNyRyw4REFBQ3ZCLDBEQUFNQTs7Ozs7Z0JBQ05tQjs4QkFDRCw4REFBQ2xCLDBEQUFNQTs7Ozs7Ozs7Ozs7Ozs7OztBQUlmIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXV0b3N0cmF0YS13ZWIvLi9hcHAvbGF5b3V0LnRzeD85OTg4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB0eXBlIHsgTWV0YWRhdGEgfSBmcm9tIFwibmV4dFwiO1xuaW1wb3J0IFwiLi9nbG9iYWxzLmNzc1wiO1xuaW1wb3J0IHsgSW50ZXIgfSBmcm9tIFwibmV4dC9mb250L2dvb2dsZVwiO1xuaW1wb3J0IE5hdkJhciBmcm9tIFwiQC9jb21wb25lbnRzL05hdkJhclwiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiQC9jb21wb25lbnRzL0Zvb3RlclwiO1xuXG5jb25zdCBpbnRlciA9IEludGVyKHsgc3Vic2V0czogW1wibGF0aW5cIl0gfSk7XG5cbmV4cG9ydCBjb25zdCBtZXRhZGF0YTogTWV0YWRhdGEgPSB7XG4gIG1ldGFkYXRhQmFzZTogbmV3IFVSTChcImh0dHBzOi8vYXV0b3N0cmF0YS5haVwiKSxcbiAgdGl0bGU6IHtcbiAgICBkZWZhdWx0OiBcIkF1dG9TdHJhdGEuYWkg4oCUIEFJ4oCRUG93ZXJlZCBJVCBTb2x1dGlvbnNcIixcbiAgICB0ZW1wbGF0ZTogXCIlcyB8IEF1dG9TdHJhdGEuYWlcIlxuICB9LFxuICBkZXNjcmlwdGlvbjogXCJBZ2VudGljIEFJLCBhdXRvbWF0aW9uLCBkYXRhIHNjaWVuY2UsIGFuZCBmdWxs4oCRc3RhY2sgZGV2ZWxvcG1lbnQgd2l0aG91dCBvZmZzaG9yZSBvdXRzb3VyY2luZy5cIixcbiAgb3BlbkdyYXBoOiB7XG4gICAgdGl0bGU6IFwiQXV0b1N0cmF0YS5haSDigJQgQUnigJFQb3dlcmVkIElUIFNvbHV0aW9uc1wiLFxuICAgIGRlc2NyaXB0aW9uOiBcIkFnZW50aWMgQUksIGF1dG9tYXRpb24sIGRhdGEgc2NpZW5jZSwgYW5kIGZ1bGzigJFzdGFjayBkZXZlbG9wbWVudC5cIixcbiAgICB1cmw6IFwiaHR0cHM6Ly9hdXRvc3RyYXRhLmFpXCIsXG4gICAgc2l0ZU5hbWU6IFwiQXV0b1N0cmF0YS5haVwiLFxuICAgIGltYWdlczogW1wiL29nLWltYWdlLnBuZ1wiXSxcbiAgICB0eXBlOiBcIndlYnNpdGVcIlxuICB9LFxuICB0d2l0dGVyOiB7IGNhcmQ6IFwic3VtbWFyeV9sYXJnZV9pbWFnZVwiIH0sXG4gIGFsdGVybmF0ZXM6IHsgY2Fub25pY2FsOiBcIi9cIiB9XG59O1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBSb290TGF5b3V0KHsgY2hpbGRyZW4gfTogeyBjaGlsZHJlbjogUmVhY3QuUmVhY3ROb2RlIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8aHRtbCBsYW5nPVwiZW5cIj5cbiAgICAgIDxib2R5IGNsYXNzTmFtZT17aW50ZXIuY2xhc3NOYW1lfT5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiZy1vcmJpdHNcIj48c3BhbiBjbGFzc05hbWU9XCJvcmIgb3JiLTFcIi8+PHNwYW4gY2xhc3NOYW1lPVwib3JiIG9yYi0yXCIvPjxzcGFuIGNsYXNzTmFtZT1cIm9yYiBvcmItM1wiLz48L2Rpdj5cbiAgICAgICAgPE5hdkJhciAvPlxuICAgICAgICB7Y2hpbGRyZW59XG4gICAgICAgIDxGb290ZXIgLz5cbiAgICAgIDwvYm9keT5cbiAgICA8L2h0bWw+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiaW50ZXIiLCJOYXZCYXIiLCJGb290ZXIiLCJtZXRhZGF0YSIsIm1ldGFkYXRhQmFzZSIsIlVSTCIsInRpdGxlIiwiZGVmYXVsdCIsInRlbXBsYXRlIiwiZGVzY3JpcHRpb24iLCJvcGVuR3JhcGgiLCJ1cmwiLCJzaXRlTmFtZSIsImltYWdlcyIsInR5cGUiLCJ0d2l0dGVyIiwiY2FyZCIsImFsdGVybmF0ZXMiLCJjYW5vbmljYWwiLCJSb290TGF5b3V0IiwiY2hpbGRyZW4iLCJodG1sIiwibGFuZyIsImJvZHkiLCJjbGFzc05hbWUiLCJkaXYiLCJzcGFuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./app/layout.tsx\n");
+
+/***/ }),
+
+/***/ "(rsc)/./app/process/page.tsx":
+/*!******************************!*\
+  !*** ./app/process/page.tsx ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ProcessPage)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_AnimatedSection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/AnimatedSection */ \"(rsc)/./components/AnimatedSection.tsx\");\n\n\nfunction ProcessPage() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n        id: \"main\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_AnimatedSection__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    className: \"text-4xl font-extrabold\",\n                    children: \"How we work\"\n                }, void 0, false, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\",\n                    lineNumber: 7,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"ol\", {\n                    className: \"grid md:grid-cols-4 gap-4 list-none counter-reset\",\n                    children: [\n                        \"Discover\",\n                        \"Prototype\",\n                        \"Launch\",\n                        \"Scale\"\n                    ].map((step, i)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                            className: \"relative bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                    className: \"absolute -top-3 -left-3 w-7 h-7 grid place-items-center font-bold text-[#06121f] rounded-full bg-gradient-to-br from-brand to-[#3fa2ff] shadow-glow\",\n                                    children: i + 1\n                                }, void 0, false, {\n                                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\",\n                                    lineNumber: 11,\n                                    columnNumber: 15\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                                    className: \"font-bold mb-2\",\n                                    children: step\n                                }, void 0, false, {\n                                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\",\n                                    lineNumber: 12,\n                                    columnNumber: 15\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                    className: \"opacity-80\",\n                                    children: \"We execute with clear scopes, milestones, and a definition of done.\"\n                                }, void 0, false, {\n                                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\",\n                                    lineNumber: 13,\n                                    columnNumber: 15\n                                }, this)\n                            ]\n                        }, step, true, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\",\n                            lineNumber: 10,\n                            columnNumber: 13\n                        }, this))\n                }, void 0, false, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\",\n                    lineNumber: 8,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\",\n            lineNumber: 6,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\app\\\\process\\\\page.tsx\",\n        lineNumber: 5,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvcHJvY2Vzcy9wYWdlLnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUEyRDtBQUU1QyxTQUFTQztJQUN0QixxQkFDRSw4REFBQ0M7UUFBS0MsSUFBRztrQkFDUCw0RUFBQ0gsbUVBQWVBOzs4QkFDZCw4REFBQ0k7b0JBQUdDLFdBQVU7OEJBQTBCOzs7Ozs7OEJBQ3hDLDhEQUFDQztvQkFBR0QsV0FBVTs4QkFDWDt3QkFBQzt3QkFBVzt3QkFBWTt3QkFBUztxQkFBUSxDQUFDRSxHQUFHLENBQUMsQ0FBQ0MsTUFBTUMsa0JBQ3BELDhEQUFDQzs0QkFBY0wsV0FBVTs7OENBQ3ZCLDhEQUFDTTtvQ0FBS04sV0FBVTs4Q0FBdUpJLElBQUU7Ozs7Ozs4Q0FDekssOERBQUNHO29DQUFHUCxXQUFVOzhDQUFrQkc7Ozs7Ozs4Q0FDaEMsOERBQUNLO29DQUFFUixXQUFVOzhDQUFhOzs7Ozs7OzJCQUhuQkc7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQVVyQiIsInNvdXJjZXMiOlsid2VicGFjazovL2F1dG9zdHJhdGEtd2ViLy4vYXBwL3Byb2Nlc3MvcGFnZS50c3g/OTE5YyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgQW5pbWF0ZWRTZWN0aW9uIGZyb20gXCJAL2NvbXBvbmVudHMvQW5pbWF0ZWRTZWN0aW9uXCI7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFByb2Nlc3NQYWdlKCl7XG4gIHJldHVybiAoXG4gICAgPG1haW4gaWQ9XCJtYWluXCI+XG4gICAgICA8QW5pbWF0ZWRTZWN0aW9uPlxuICAgICAgICA8aDEgY2xhc3NOYW1lPVwidGV4dC00eGwgZm9udC1leHRyYWJvbGRcIj5Ib3cgd2Ugd29yazwvaDE+XG4gICAgICAgIDxvbCBjbGFzc05hbWU9XCJncmlkIG1kOmdyaWQtY29scy00IGdhcC00IGxpc3Qtbm9uZSBjb3VudGVyLXJlc2V0XCI+XG4gICAgICAgICAge1snRGlzY292ZXInLCdQcm90b3R5cGUnLCdMYXVuY2gnLCdTY2FsZSddLm1hcCgoc3RlcCwgaSk9PihcbiAgICAgICAgICAgIDxsaSBrZXk9e3N0ZXB9IGNsYXNzTmFtZT1cInJlbGF0aXZlIGJnLXdoaXRlLzUgYm9yZGVyIGJvcmRlci13aGl0ZS8xMCByb3VuZGVkLXhsIHAtNCBzaGFkb3ctZ2xvd1wiPlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJhYnNvbHV0ZSAtdG9wLTMgLWxlZnQtMyB3LTcgaC03IGdyaWQgcGxhY2UtaXRlbXMtY2VudGVyIGZvbnQtYm9sZCB0ZXh0LVsjMDYxMjFmXSByb3VuZGVkLWZ1bGwgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1icmFuZCB0by1bIzNmYTJmZl0gc2hhZG93LWdsb3dcIj57aSsxfTwvc3Bhbj5cbiAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtYm9sZCBtYi0yXCI+e3N0ZXB9PC9oMz5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwib3BhY2l0eS04MFwiPldlIGV4ZWN1dGUgd2l0aCBjbGVhciBzY29wZXMsIG1pbGVzdG9uZXMsIGFuZCBhIGRlZmluaXRpb24gb2YgZG9uZS48L3A+XG4gICAgICAgICAgICA8L2xpPlxuICAgICAgICAgICkpfVxuICAgICAgICA8L29sPlxuICAgICAgPC9BbmltYXRlZFNlY3Rpb24+XG4gICAgPC9tYWluPlxuICApXG59XG4iXSwibmFtZXMiOlsiQW5pbWF0ZWRTZWN0aW9uIiwiUHJvY2Vzc1BhZ2UiLCJtYWluIiwiaWQiLCJoMSIsImNsYXNzTmFtZSIsIm9sIiwibWFwIiwic3RlcCIsImkiLCJsaSIsInNwYW4iLCJoMyIsInAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./app/process/page.tsx\n");
+
+/***/ }),
+
+/***/ "(rsc)/./components/AnimatedSection.tsx":
+/*!****************************************!*\
+  !*** ./components/AnimatedSection.tsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\Projects\AutoStrata.ai\CompanyWebsite\components\AnimatedSection.tsx`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\Projects\AutoStrata.ai\CompanyWebsite\components\AnimatedSection.tsx#default`));
+
+
+/***/ }),
+
+/***/ "(rsc)/./components/Footer.tsx":
+/*!*******************************!*\
+  !*** ./components/Footer.tsx ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Footer)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Footer() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"footer\", {\n        className: \"border-t border-white/10 mt-10 bg-black/20\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"container flex flex-wrap items-center justify-between gap-3 py-4\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    children: [\n                        \"\\xa9 \",\n                        new Date().getFullYear(),\n                        \" AutoStrata Ltd. All rights reserved.\"\n                    ]\n                }, void 0, true, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n                    lineNumber: 5,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"nav\", {\n                    className: \"flex gap-3 opacity-80\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                            href: \"/\",\n                            children: \"Home\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n                            lineNumber: 7,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                            href: \"/about\",\n                            children: \"About\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n                            lineNumber: 8,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                            href: \"/services\",\n                            children: \"Services\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n                            lineNumber: 9,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                            href: \"/process\",\n                            children: \"Process\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n                            lineNumber: 10,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                            href: \"/contact\",\n                            children: \"Contact\"\n                        }, void 0, false, {\n                            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n                            lineNumber: 11,\n                            columnNumber: 11\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n                    lineNumber: 6,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n            lineNumber: 4,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"D:\\\\Projects\\\\AutoStrata.ai\\\\CompanyWebsite\\\\components\\\\Footer.tsx\",\n        lineNumber: 3,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9jb21wb25lbnRzL0Zvb3Rlci50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFlLFNBQVNBO0lBQ3RCLHFCQUNFLDhEQUFDQztRQUFPQyxXQUFVO2tCQUNoQiw0RUFBQ0M7WUFBSUQsV0FBVTs7OEJBQ2IsOERBQUNFOzt3QkFBRTt3QkFBRyxJQUFJQyxPQUFPQyxXQUFXO3dCQUFHOzs7Ozs7OzhCQUMvQiw4REFBQ0M7b0JBQUlMLFdBQVU7O3NDQUNiLDhEQUFDTTs0QkFBRUMsTUFBSztzQ0FBSTs7Ozs7O3NDQUNaLDhEQUFDRDs0QkFBRUMsTUFBSztzQ0FBUzs7Ozs7O3NDQUNqQiw4REFBQ0Q7NEJBQUVDLE1BQUs7c0NBQVk7Ozs7OztzQ0FDcEIsOERBQUNEOzRCQUFFQyxNQUFLO3NDQUFXOzs7Ozs7c0NBQ25CLDhEQUFDRDs0QkFBRUMsTUFBSztzQ0FBVzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLN0IiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hdXRvc3RyYXRhLXdlYi8uL2NvbXBvbmVudHMvRm9vdGVyLnRzeD9hNzlmIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEZvb3Rlcigpe1xuICByZXR1cm4gKFxuICAgIDxmb290ZXIgY2xhc3NOYW1lPVwiYm9yZGVyLXQgYm9yZGVyLXdoaXRlLzEwIG10LTEwIGJnLWJsYWNrLzIwXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lciBmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC0zIHB5LTRcIj5cbiAgICAgICAgPHA+wqkge25ldyBEYXRlKCkuZ2V0RnVsbFllYXIoKX0gQXV0b1N0cmF0YSBMdGQuIEFsbCByaWdodHMgcmVzZXJ2ZWQuPC9wPlxuICAgICAgICA8bmF2IGNsYXNzTmFtZT1cImZsZXggZ2FwLTMgb3BhY2l0eS04MFwiPlxuICAgICAgICAgIDxhIGhyZWY9XCIvXCI+SG9tZTwvYT5cbiAgICAgICAgICA8YSBocmVmPVwiL2Fib3V0XCI+QWJvdXQ8L2E+XG4gICAgICAgICAgPGEgaHJlZj1cIi9zZXJ2aWNlc1wiPlNlcnZpY2VzPC9hPlxuICAgICAgICAgIDxhIGhyZWY9XCIvcHJvY2Vzc1wiPlByb2Nlc3M8L2E+XG4gICAgICAgICAgPGEgaHJlZj1cIi9jb250YWN0XCI+Q29udGFjdDwvYT5cbiAgICAgICAgPC9uYXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Zvb3Rlcj5cbiAgKTtcbn1cbiJdLCJuYW1lcyI6WyJGb290ZXIiLCJmb290ZXIiLCJjbGFzc05hbWUiLCJkaXYiLCJwIiwiRGF0ZSIsImdldEZ1bGxZZWFyIiwibmF2IiwiYSIsImhyZWYiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./components/Footer.tsx\n");
+
+/***/ }),
+
+/***/ "(rsc)/./components/NavBar.tsx":
+/*!*******************************!*\
+  !*** ./components/NavBar.tsx ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\Projects\AutoStrata.ai\CompanyWebsite\components\NavBar.tsx`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\Projects\AutoStrata.ai\CompanyWebsite\components\NavBar.tsx#default`));
+
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/@rainbow-me","vendor-chunks/viem","vendor-chunks/next","vendor-chunks/framer-motion","vendor-chunks/@noble","vendor-chunks/@wagmi","vendor-chunks/@tanstack","vendor-chunks/qrcode","vendor-chunks/@adraffy","vendor-chunks/pngjs","vendor-chunks/ua-parser-js","vendor-chunks/abitype","vendor-chunks/zustand","vendor-chunks/tslib","vendor-chunks/wagmi","vendor-chunks/react-remove-scroll","vendor-chunks/use-sync-external-store","vendor-chunks/@vanilla-extract","vendor-chunks/eventemitter3","vendor-chunks/dijkstrajs","vendor-chunks/react-remove-scroll-bar","vendor-chunks/use-callback-ref","vendor-chunks/use-sidecar","vendor-chunks/react-style-singleton","vendor-chunks/mipd","vendor-chunks/@swc","vendor-chunks/clsx","vendor-chunks/get-nonce"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fprocess%2Fpage&page=%2Fprocess%2Fpage&appPaths=%2Fprocess%2Fpage&pagePath=private-next-app-dir%2Fprocess%2Fpage.tsx&appDir=D%3A%5CProjects%5CAutoStrata.ai%5CCompanyWebsite%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CProjects%5CAutoStrata.ai%5CCompanyWebsite&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+module.exports = __webpack_exports__;
+
+})();
