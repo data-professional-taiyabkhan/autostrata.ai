@@ -73,97 +73,45 @@ export default function ServicesDropdown() {
 
       {isOpen && (
         <div 
-          className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-[900px] max-w-[95vw] bg-[#0c1226] border border-white/10 rounded-2xl shadow-2xl z-50 overflow-hidden transition-all duration-300 ease-out ${
+          className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-[800px] max-w-[95vw] bg-[#0c1226] border border-white/10 rounded-2xl shadow-2xl z-50 overflow-hidden transition-all duration-300 ease-out ${
             isOpen 
               ? 'opacity-100 translate-y-0 scale-100' 
               : 'opacity-0 -translate-y-2 scale-95 pointer-events-none'
           }`}
         >
           <div className="p-4 md:p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {/* Left Side - Efficiency Graph */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-bold mb-4 text-white">YOUR OPERATIONAL EFFICIENCY (%)</h3>
-                <div className="relative h-32 mb-4">
-                  {/* Graph Background */}
-                  <div className="absolute inset-0 flex flex-col justify-between">
-                    {[0, 20, 40, 60, 80, 100].map((value) => (
-                      <div key={value} className="flex items-center text-xs opacity-50">
-                        <div className="w-8 text-right">{value}%</div>
-                        <div className="flex-1 h-px bg-white/20 ml-2"></div>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  {/* Time axis */}
-                  <div className="absolute bottom-0 left-8 right-0 flex justify-between text-xs opacity-50">
-                    {[0, 1, 2, 3, 4, 5].map((month) => (
-                      <span key={month}>{month}</span>
-                    ))}
-                  </div>
-                  
-                  {/* Current efficiency line */}
-                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 120">
-                    <polyline
-                      points="20,100 60,90 100,80 140,70 180,60"
-                      fill="none"
-                      stroke="#3fa2ff"
-                      strokeWidth="2"
-                      opacity="0.7"
-                    />
-                    <text x="10" y="50" className="text-xs fill-white opacity-70">Current</text>
-                  </svg>
-                  
-                  {/* With AutoStrata efficiency line */}
-                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 120">
-                    <polyline
-                      points="20,100 60,60 100,30 140,15 180,5"
-                      fill="none"
-                      stroke="#5bbcff"
-                      strokeWidth="3"
-                    />
-                    <text x="10" y="20" className="text-xs fill-white opacity-70">With AutoStrata</text>
-                  </svg>
+            <h3 className="text-xl font-bold mb-6 text-white">Our Services</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+              {serviceCards.map((service, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 hover:scale-105 transition-all duration-200 cursor-pointer"
+                  style={{
+                    animationDelay: `${index * 50}ms`,
+                    animation: isOpen ? 'fadeInUp 0.4s ease-out forwards' : 'none'
+                  }}
+                >
+                  <h4 className="text-sm font-semibold text-brand mb-1">{service.title}</h4>
+                  <p className="text-xs opacity-80 leading-relaxed">{service.description}</p>
                 </div>
-                <p className="text-xs opacity-80">Time (Months)</p>
-              </div>
+              ))}
+            </div>
 
-              {/* Right Side - Service Cards & CTA */}
-              <div>
-                <h3 className="text-xl font-bold mb-6 text-white">Our Services</h3>
-                
-                    <div className="grid grid-cols-1 gap-3 mb-6">
-                      {serviceCards.map((service, index) => (
-                        <div 
-                          key={index} 
-                          className="bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 hover:scale-105 transition-all duration-200 cursor-pointer"
-                          style={{
-                            animationDelay: `${index * 50}ms`,
-                            animation: isOpen ? 'fadeInUp 0.4s ease-out forwards' : 'none'
-                          }}
-                        >
-                          <h4 className="text-sm font-semibold text-brand mb-1">{service.title}</h4>
-                          <p className="text-xs opacity-80 leading-relaxed">{service.description}</p>
-                        </div>
-                      ))}
-                    </div>
+            <div className="pt-4 border-t border-white/10 mb-6">
+              <Link href="/services" className="text-sm text-brand hover:opacity-80 transition-opacity flex items-center">
+                View All Services →
+              </Link>
+            </div>
 
-                <div className="pt-4 border-t border-white/10 mb-6">
-                  <Link href="/services" className="text-sm text-brand hover:opacity-80 transition-opacity flex items-center">
-                    View All Services →
-                  </Link>
-                </div>
-
-                <div className="bg-gradient-to-r from-brand/20 to-[#3fa2ff]/20 border border-brand/30 rounded-lg p-4">
-                  <h4 className="font-semibold mb-2">Ready to get started?</h4>
-                  <p className="text-sm opacity-90 mb-3">Transform your business with AI-powered automation</p>
-                  <Link href="/contact" className="block">
-                    <button className="bg-gradient-to-r from-brand to-[#3fa2ff] text-[#06121f] font-semibold px-4 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity w-full">
-                      Start a Project
-                    </button>
-                  </Link>
-                </div>
-              </div>
+            <div className="bg-gradient-to-r from-brand/20 to-[#3fa2ff]/20 border border-brand/30 rounded-lg p-4">
+              <h4 className="font-semibold mb-2">Ready to get started?</h4>
+              <p className="text-sm opacity-90 mb-3">Transform your business with AI-powered automation</p>
+              <Link href="/contact" className="block">
+                <button className="bg-gradient-to-r from-brand to-[#3fa2ff] text-[#06121f] font-semibold px-4 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity w-full">
+                  Start a Project
+                </button>
+              </Link>
             </div>
           </div>
         </div>
