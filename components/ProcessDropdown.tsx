@@ -67,13 +67,26 @@ export default function ProcessDropdown() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-[600px] max-w-[95vw] bg-[#0c1226] border border-white/10 rounded-2xl shadow-2xl z-50 overflow-hidden">
+        <div 
+          className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-[600px] max-w-[95vw] bg-[#0c1226] border border-white/10 rounded-2xl shadow-2xl z-50 overflow-hidden transition-all duration-300 ease-out ${
+            isOpen 
+              ? 'opacity-100 translate-y-0 scale-100' 
+              : 'opacity-0 -translate-y-2 scale-95 pointer-events-none'
+          }`}
+        >
           <div className="p-6">
             <h3 className="text-xl font-bold mb-6 text-white">How we work</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               {processSteps.map((step, index) => (
-                <div key={index} className="relative bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow hover:bg-white/10 transition-colors">
+                <div 
+                  key={index} 
+                  className="relative bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow hover:bg-white/10 hover:scale-105 transition-all duration-200"
+                  style={{
+                    animationDelay: `${index * 100}ms`,
+                    animation: isOpen ? 'fadeInUp 0.5s ease-out forwards' : 'none'
+                  }}
+                >
                   <span className="absolute -top-3 -left-3 w-7 h-7 grid place-items-center font-bold text-[#06121f] rounded-full bg-gradient-to-br from-brand to-[#3fa2ff] shadow-glow text-sm">
                     {step.step}
                   </span>

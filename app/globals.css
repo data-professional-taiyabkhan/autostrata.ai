@@ -28,3 +28,15 @@ html, body {
 .orb-2 { width:360px; height:360px; background:#00ffcc26; right:10%; top:8%; animation:float 14s ease-in-out infinite .5s; }
 .orb-3 { width:500px; height:500px; background:#5bbcff22; left:20%; bottom:-120px; animation:float 16s ease-in-out infinite .8s; }
 @keyframes float { 50% { transform: translateY(-15px) translateX(10px); } }
+
+/* Dropdown animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

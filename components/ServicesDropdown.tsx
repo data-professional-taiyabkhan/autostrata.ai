@@ -72,7 +72,13 @@ export default function ServicesDropdown() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-[900px] max-w-[95vw] bg-[#0c1226] border border-white/10 rounded-2xl shadow-2xl z-50 overflow-hidden">
+        <div 
+          className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-[900px] max-w-[95vw] bg-[#0c1226] border border-white/10 rounded-2xl shadow-2xl z-50 overflow-hidden transition-all duration-300 ease-out ${
+            isOpen 
+              ? 'opacity-100 translate-y-0 scale-100' 
+              : 'opacity-0 -translate-y-2 scale-95 pointer-events-none'
+          }`}
+        >
           <div className="p-4 md:p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {/* Left Side - Efficiency Graph */}
@@ -126,14 +132,21 @@ export default function ServicesDropdown() {
               <div>
                 <h3 className="text-xl font-bold mb-6 text-white">Our Services</h3>
                 
-                <div className="grid grid-cols-1 gap-3 mb-6">
-                  {serviceCards.map((service, index) => (
-                    <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors cursor-pointer">
-                      <h4 className="text-sm font-semibold text-brand mb-1">{service.title}</h4>
-                      <p className="text-xs opacity-80 leading-relaxed">{service.description}</p>
+                    <div className="grid grid-cols-1 gap-3 mb-6">
+                      {serviceCards.map((service, index) => (
+                        <div 
+                          key={index} 
+                          className="bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 hover:scale-105 transition-all duration-200 cursor-pointer"
+                          style={{
+                            animationDelay: `${index * 50}ms`,
+                            animation: isOpen ? 'fadeInUp 0.4s ease-out forwards' : 'none'
+                          }}
+                        >
+                          <h4 className="text-sm font-semibold text-brand mb-1">{service.title}</h4>
+                          <p className="text-xs opacity-80 leading-relaxed">{service.description}</p>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
 
                 <div className="pt-4 border-t border-white/10 mb-6">
                   <Link href="/services" className="text-sm text-brand hover:opacity-80 transition-opacity flex items-center">
