@@ -1,7 +1,6 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
-import WalletConnect from "@/components/WalletConnect";
 import ServicesDropdown from "@/components/ServicesDropdown";
 import ProcessDropdown from "@/components/ProcessDropdown";
 
@@ -20,7 +19,9 @@ export default function NavBar(){
           <ServicesDropdown />
           <ProcessDropdown />
           <Link href="/contact" className="opacity-90 hover:opacity-100">Contact</Link>
-          <WalletConnect />
+          <Link href="/contact" className="bg-gradient-to-r from-brand to-[#3fa2ff] text-[#06121f] font-semibold px-4 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity">
+            Contact Us
+          </Link>
         </nav>
       </div>
     </header>
