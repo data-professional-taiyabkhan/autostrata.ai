@@ -8,9 +8,10 @@ export default function AnimatedSection({ children, delay=0 }:{ children: React.
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: .7, ease: "easeOut", delay }}
-      className="section container"
     >
-      {children}
+      <div className="section container">
+        {children}
+      </div>
     </motion.section>
   );
 }
