@@ -18,7 +18,6 @@ export default function NavBar(){
           <Link href="/about" className="opacity-90 hover:opacity-100">About</Link>
           <ServicesDropdown />
           <ProcessDropdown />
-          <Link href="/contact" className="opacity-90 hover:opacity-100">Contact</Link>
           <Link href="/contact" className="bg-gradient-to-r from-brand to-[#3fa2ff] text-[#06121f] font-semibold px-4 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity">
             Contact Us
           </Link>
