@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import WalletConnect from "@/components/WalletConnect";
+import ServicesDropdown from "@/components/ServicesDropdown";
+import ProcessDropdown from "@/components/ProcessDropdown";
 
 export default function NavBar(){
   const [open, setOpen] = useState(false);
@@ -15,8 +17,8 @@ export default function NavBar(){
         <button className="md:hidden border border-white/20 px-2 py-1 rounded" onClick={()=>setOpen(!open)} aria-expanded={open}>☰</button>
         <nav className={`md:flex items-center gap-4 ${open ? "flex flex-col absolute left-0 right-0 top-12 bg-[#0c1226] p-3 border-b border-white/10" : "hidden md:flex"}`}>
           <Link href="/about" className="opacity-90 hover:opacity-100">About</Link>
-          <Link href="/services" className="opacity-90 hover:opacity-100">Services</Link>
-          <Link href="/process" className="opacity-90 hover:opacity-100">Process</Link>
+          <ServicesDropdown />
+          <ProcessDropdown />
           <Link href="/contact" className="opacity-90 hover:opacity-100">Contact</Link>
           <WalletConnect />
         </nav>

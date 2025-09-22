@@ -6,18 +6,18 @@ export default function HomePage(){
       <AnimatedSection>
         <div className="container grid md:grid-cols-2 gap-8 items-center py-10">
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">AI‑powered IT, built fast & affordable</h1>
-            <p className="mt-3 opacity-80">We deliver <b>agentic AI</b>, <b>automation</b>, and <b>data‑driven</b> software without offshore outsourcing — from startups to enterprise.</p>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">AI‑powered solutions, built fast & affordable</h1>
+            <p className="mt-3 opacity-80">We deliver <b>intelligent AI agents</b>, <b>business automation</b>, and <b>enterprise integration</b> without offshore outsourcing — from startups to enterprise.</p>
             <div className="mt-5 flex gap-3">
               <a className="px-4 py-2 rounded-lg bg-gradient-to-br from-brand to-[#3fa2ff] text-[#06121f] font-semibold border border-white/10" href="/contact">Start a project</a>
               <a className="px-4 py-2 rounded-lg border border-white/20" href="/services">Explore services</a>
             </div>
             <ul className="flex flex-wrap gap-2 mt-4 text-sm opacity-90">
-              <li className="border border-white/10 rounded-full px-2 py-1">Agentic AI</li>
-              <li className="border border-white/10 rounded-full px-2 py-1">Automation</li>
-              <li className="border border-white/10 rounded-full px-2 py-1">Data Science</li>
-              <li className="border border-white/10 rounded-full px-2 py-1">Web & App</li>
-              <li className="border border-white/10 rounded-full px-2 py-1">Secure Cloud</li>
+              <li className="border border-white/10 rounded-full px-2 py-1">AI Agents</li>
+              <li className="border border-white/10 rounded-full px-2 py-1">RAG Systems</li>
+              <li className="border border-white/10 rounded-full px-2 py-1">Process Automation</li>
+              <li className="border border-white/10 rounded-full px-2 py-1">Document Processing</li>
+              <li className="border border-white/10 rounded-full px-2 py-1">Enterprise Integration</li>
             </ul>
           </div>
           <div className="relative">
@@ -35,13 +35,15 @@ export default function HomePage(){
 
       <AnimatedSection>
         <h2 className="text-3xl font-bold mb-4">What we do</h2>
-        <div className="grid md:grid-cols-4 gap-4">
-          {['Agentic AI & Automation','Data Science & ML','Web, App & APIs','Cloud & Security'].map((t)=>(
-            <article key={t} className="bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow hover:-translate-y-0.5 transition">
-              <h3 className="font-bold mb-2">{t}</h3>
-              <p className="opacity-80">Modern engineering with sprint scopes, measurable outcomes, and privacy‑by‑design.</p>
-            </article>
-          ))}
+        <div className="grid md:grid-cols-2 gap-4">
+          <article className="bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow hover:-translate-y-0.5 transition">
+            <h3 className="font-bold mb-2">AI Agent Solutions</h3>
+            <p className="opacity-80">Custom AI agents, chatbots, RAG systems, and multi-agent workflows for intelligent automation.</p>
+          </article>
+          <article className="bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow hover:-translate-y-0.5 transition">
+            <h3 className="font-bold mb-2">AI Automation Solutions</h3>
+            <p className="opacity-80">Business process automation, document processing, and enterprise tool integration.</p>
+          </article>
         </div>
       </AnimatedSection>
 
