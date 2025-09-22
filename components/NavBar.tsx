@@ -1,7 +1,6 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
-import WalletConnect from "@/components/DynamicWalletConnect";
 
 export default function NavBar(){
   const [open, setOpen] = useState(false);
@@ -18,7 +17,6 @@ export default function NavBar(){
           <Link href="/services" className="opacity-90 hover:opacity-100">Services</Link>
           <Link href="/process" className="opacity-90 hover:opacity-100">Process</Link>
           <Link href="/contact" className="opacity-90 hover:opacity-100">Contact</Link>
-          <WalletConnect />
         </nav>
       </div>
     </header>
