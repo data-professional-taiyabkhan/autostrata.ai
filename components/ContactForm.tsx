@@ -6,17 +6,48 @@ export default function ContactForm(){
   const [status, setStatus] = useState<'idle'|'sent'|'error'>('idle');
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    if (!endpoint) return; // fallback to default form behavior
+    if (!endpoint) {
+      console.log('No Formspree endpoint configured, using fallback');
+      return; // fallback to default form behavior
+    }
     e.preventDefault();
+    setStatus('idle'); // Reset status
     const data = new FormData(e.currentTarget);
+    
     try {
-      const res = await fetch(endpoint, { method:'POST', body: data });
-      if (res.ok) setStatus('sent'); else setStatus('error');
-    } catch { setStatus('error'); }
+      console.log('Submitting to:', endpoint);
+      const res = await fetch(endpoint, { 
+        method: 'POST', 
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      console.log('Response status:', res.status);
+      const result = await res.json();
+      console.log('Response:', result);
+      
+      if (res.ok) {
+        setStatus('sent');
+      } else {
+        console.error('Form submission error:', result);
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+      setStatus('error');
+    }
   };
 
   return (
-    <form action={endpoint ? undefined : 'mailto:contact@autostrata.ai'} method={endpoint ? 'POST' : 'get'} onSubmit={onSubmit} className="space-y-3 bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow">
+    <div className="space-y-3 bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow">
+      {process.env.NODE_ENV === 'development' && (
+        <div className="text-xs text-gray-400 mb-2">
+          Debug: {endpoint ? `Using Formspree: ${endpoint}` : 'Using mailto fallback'}
+        </div>
+      )}
+      <form action={endpoint ? undefined : 'mailto:contact@autostrata.ai'} method={endpoint ? 'POST' : 'get'} onSubmit={onSubmit} className="space-y-3">
       <div className="grid md:grid-cols-2 gap-3">
         <label className="grid gap-1">
           <span>Full name</span>
@@ -40,6 +71,7 @@ export default function ContactForm(){
       </button>
       {status === 'sent' && <p className="text-green-300">Thanks! We'll get back to you shortly.</p>}
       {status === 'error' && <p className="text-red-300">Something went wrong. Email us at contact@autostrata.ai</p>}
-    </form>
+      </form>
+    </div>
   );
 }
