@@ -5,7 +5,7 @@ import ParallaxSection from "@/components/ParallaxSection";
 
 export default function HomePage(){
   return (
-    <main id="main">
+    <div id="main">
       <AnimatedSection>
         <div className="container grid md:grid-cols-2 gap-8 items-center py-16">
           <AnimatedText direction="left" delay={0.1}>
@@ -80,6 +80,6 @@ export default function HomePage(){
           </div>
         </AnimatedText>
       </AnimatedSection>
-    </main>
+    </div>
   )
 }

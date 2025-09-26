@@ -4,7 +4,7 @@ import StaggeredGrid from "@/components/StaggeredGrid";
 
 export default function ServicesPage(){
   return (
-    <main id="main">
+    <div id="main">
       <AnimatedSection>
         <AnimatedText direction="up" delay={0.1}>
           <h1 className="text-4xl font-extrabold">Services</h1>
@@ -63,6 +63,6 @@ export default function ServicesPage(){
           </article>
         </StaggeredGrid>
       </AnimatedSection>
-    </main>
+    </div>
   )
 }
