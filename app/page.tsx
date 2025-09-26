@@ -2,7 +2,6 @@ import AnimatedSection from "@/components/AnimatedSection";
 import AnimatedText from "@/components/AnimatedText";
 import StaggeredGrid from "@/components/StaggeredGrid";
 import ParallaxSection from "@/components/ParallaxSection";
-import AnimatedGraph from "@/components/AnimatedGraph";
 
 export default function HomePage(){
   return (
@@ -32,8 +31,17 @@ export default function HomePage(){
                 <div className="p-6 relative z-10">
                   <h3 className="font-bold mb-2">AutoStrata Engine</h3>
                   <p className="opacity-80 mb-4">Our orchestration layer combines AI agents, tool use, and clean engineering to deliver real outcomes quickly.</p>
-                  <div className="h-32 md:h-40">
-                    <AnimatedGraph className="h-full" delay={0.8} />
+                  <div className="h-32 md:h-40 rounded-lg overflow-hidden">
+                    <video 
+                      className="w-full h-full object-cover"
+                      autoPlay 
+                      loop 
+                      muted 
+                      playsInline
+                    >
+                      <source src="/graph.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>
