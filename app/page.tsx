@@ -2,6 +2,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import AnimatedText from "@/components/AnimatedText";
 import StaggeredGrid from "@/components/StaggeredGrid";
 import ParallaxSection from "@/components/ParallaxSection";
+import AnimatedGraph from "@/components/AnimatedGraph";
 
 export default function HomePage(){
   return (
@@ -43,30 +44,48 @@ export default function HomePage(){
         <AnimatedText direction="up" delay={0.2}>
           <h2 className="text-3xl font-bold mb-8">What we do</h2>
         </AnimatedText>
-        <StaggeredGrid className="grid md:grid-cols-2 gap-6" staggerDelay={0.2}>
-          <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
-            <h3 className="font-bold mb-3 text-lg">AI Agent Solutions</h3>
-            <p className="opacity-80">Custom AI agents, chatbots, RAG systems, and multi-agent workflows for intelligent automation.</p>
-          </article>
-          <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
-            <h3 className="font-bold mb-3 text-lg">AI Automation Solutions</h3>
-            <p className="opacity-80">Business process automation, document processing, and enterprise tool integration.</p>
-          </article>
-        </StaggeredGrid>
+        <div className="grid md:grid-cols-3 gap-6">
+          <StaggeredGrid className="md:col-span-2 grid md:grid-cols-2 gap-6" staggerDelay={0.2}>
+            <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
+              <h3 className="font-bold mb-3 text-lg">AI Agent Solutions</h3>
+              <p className="opacity-80">Custom AI agents, chatbots, RAG systems, and multi-agent workflows for intelligent automation.</p>
+            </article>
+            <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
+              <h3 className="font-bold mb-3 text-lg">AI Automation Solutions</h3>
+              <p className="opacity-80">Business process automation, document processing, and enterprise tool integration.</p>
+            </article>
+          </StaggeredGrid>
+          <AnimatedText direction="left" delay={0.4}>
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card h-full">
+              <h3 className="font-bold mb-4 text-lg">Performance Impact</h3>
+              <p className="opacity-80 mb-4 text-sm">See how our solutions drive measurable growth</p>
+              <AnimatedGraph className="h-32" delay={0.6} />
+            </div>
+          </AnimatedText>
+        </div>
       </AnimatedSection>
 
       <AnimatedSection>
         <AnimatedText direction="up" delay={0.3}>
           <h2 className="text-3xl font-bold mb-8">Selected work</h2>
         </AnimatedText>
-        <StaggeredGrid className="grid md:grid-cols-4 gap-6" staggerDelay={0.15}>
-          {['Virtual Receptionist','Mummy Help (Mobile)','AI Diet Tracker','Visa‑Sponsor Analytics'].map((t)=>(
-            <article key={t} className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
-              <h3 className="font-bold mb-3 text-lg">{t}</h3>
-              <p className="opacity-80">Outcome‑driven build. Ask us for a walkthrough demo.</p>
-            </article>
-          ))}
-        </StaggeredGrid>
+        <div className="grid md:grid-cols-5 gap-6">
+          <StaggeredGrid className="md:col-span-4 grid md:grid-cols-4 gap-6" staggerDelay={0.15}>
+            {['Virtual Receptionist','Mummy Help (Mobile)','AI Diet Tracker','Visa‑Sponsor Analytics'].map((t)=>(
+              <article key={t} className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
+                <h3 className="font-bold mb-3 text-lg">{t}</h3>
+                <p className="opacity-80">Outcome‑driven build. Ask us for a walkthrough demo.</p>
+              </article>
+            ))}
+          </StaggeredGrid>
+          <AnimatedText direction="right" delay={0.5}>
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card h-full">
+              <h3 className="font-bold mb-4 text-lg">Success Rate</h3>
+              <p className="opacity-80 mb-4 text-sm">Project completion metrics</p>
+              <AnimatedGraph className="h-32" delay={0.7} />
+            </div>
+          </AnimatedText>
+        </div>
       </AnimatedSection>
 
       <AnimatedSection>
