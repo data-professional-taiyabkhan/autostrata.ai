@@ -7,7 +7,7 @@ export default function HomePage(){
   return (
     <main id="main">
       <AnimatedSection>
-        <div className="container grid md:grid-cols-2 gap-8 items-center py-16">
+        <div className="container grid md:grid-cols-2 gap-8 items-center py-20">
           <AnimatedText direction="left" delay={0.1}>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-reveal">
               <span className="stagger-1">AI‑powered solutions,</span><br />
@@ -41,7 +41,7 @@ export default function HomePage(){
 
       <AnimatedSection>
         <AnimatedText direction="up" delay={0.2}>
-          <h2 className="text-3xl font-bold mb-8">What we do</h2>
+          <h2 className="text-3xl font-bold mb-12">What we do</h2>
         </AnimatedText>
         <StaggeredGrid className="grid md:grid-cols-2 gap-6" staggerDelay={0.2}>
           <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
@@ -57,7 +57,7 @@ export default function HomePage(){
 
       <AnimatedSection>
         <AnimatedText direction="up" delay={0.3}>
-          <h2 className="text-3xl font-bold mb-8">Selected work</h2>
+          <h2 className="text-3xl font-bold mb-12">Selected work</h2>
         </AnimatedText>
         <StaggeredGrid className="grid md:grid-cols-4 gap-6" staggerDelay={0.15}>
           {['Virtual Receptionist','Mummy Help (Mobile)','AI Diet Tracker','Visa‑Sponsor Analytics'].map((t)=>(
@@ -71,10 +71,10 @@ export default function HomePage(){
 
       <AnimatedSection>
         <AnimatedText direction="up" delay={0.4}>
-          <div className="text-center bg-white/5 border border-white/10 rounded-2xl p-8 shadow-glow hover-lift glow-card">
-            <h2 className="text-3xl font-bold mb-4">Ready to build?</h2>
-            <p className="opacity-80 mb-6">Tell us your goals — we'll propose the fastest path to value.</p>
-            <a className="px-6 py-3 rounded-lg bg-gradient-to-br from-brand to-[#3fa2ff] text-[#06121f] font-semibold border border-white/10 hover-lift hover-glow" href="/contact">
+          <div className="text-center bg-white/5 border border-white/10 rounded-2xl p-10 shadow-glow hover-lift glow-card">
+            <h2 className="text-3xl font-bold mb-6">Ready to build?</h2>
+            <p className="opacity-80 mb-8 text-lg">Tell us your goals — we'll propose the fastest path to value.</p>
+            <a className="px-8 py-4 rounded-lg bg-gradient-to-br from-brand to-[#3fa2ff] text-[#06121f] font-semibold border border-white/10 hover-lift hover-glow text-lg" href="/contact">
               Talk to AutoStrata
             </a>
           </div>
