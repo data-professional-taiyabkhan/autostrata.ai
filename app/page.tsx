@@ -14,11 +14,10 @@ export default function HomePage(){
               <span className="stagger-2">built fast & affordable</span>
             </h1>
             <p className="mt-3 opacity-80">We deliver <b>intelligent AI agents</b>, <b>business automation</b>, and <b>enterprise integration</b> without offshore outsourcing — from startups to enterprise.</p>
-            <div className="mt-5 flex gap-3">
-              <a className="px-4 py-2 rounded-lg bg-gradient-to-br from-brand to-[#3fa2ff] text-[#06121f] font-semibold border border-white/10 hover-lift hover-glow" href="/contact">Start a project</a>
+            <div className="mt-5">
               <a className="px-4 py-2 rounded-lg border border-white/20 hover-lift" href="/services">Explore services</a>
             </div>
-            <StaggeredGrid className="flex flex-wrap gap-2 mt-4 text-sm opacity-90" staggerDelay={0.1}>
+            <StaggeredGrid className="flex flex-wrap gap-3 mt-4 text-sm opacity-90" staggerDelay={0.1}>
               {['AI Agents', 'RAG Systems', 'Process Automation', 'Document Processing', 'Enterprise Integration'].map((tag, index) => (
                 <li key={tag} className="border border-white/10 rounded-full px-2 py-1 hover-glow">{tag}</li>
               ))}
@@ -54,7 +53,7 @@ export default function HomePage(){
         <AnimatedText direction="up" delay={0.2}>
           <h2 className="text-3xl font-bold mb-8">What we do</h2>
         </AnimatedText>
-        <StaggeredGrid className="grid md:grid-cols-2 gap-6" staggerDelay={0.2}>
+        <StaggeredGrid className="grid md:grid-cols-2 gap-8" staggerDelay={0.2}>
           <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
             <h3 className="font-bold mb-3 text-lg">AI Agent Solutions</h3>
             <p className="opacity-80">Custom AI agents, chatbots, RAG systems, and multi-agent workflows for intelligent automation.</p>
@@ -70,7 +69,7 @@ export default function HomePage(){
         <AnimatedText direction="up" delay={0.3}>
           <h2 className="text-3xl font-bold mb-8">Selected work</h2>
         </AnimatedText>
-        <StaggeredGrid className="grid md:grid-cols-4 gap-6" staggerDelay={0.15}>
+        <StaggeredGrid className="grid md:grid-cols-4 gap-8" staggerDelay={0.15}>
           {['Virtual Receptionist','Mummy Help (Mobile)','AI Diet Tracker','Visa‑Sponsor Analytics'].map((t)=>(
             <article key={t} className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
               <h3 className="font-bold mb-3 text-lg">{t}</h3>
