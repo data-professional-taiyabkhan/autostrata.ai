@@ -43,3 +43,4 @@ The contact form includes:
 - ✅ Success/error messages
 - ✅ Fallback to mailto if Formspree not configured
 - ✅ Responsive design
+

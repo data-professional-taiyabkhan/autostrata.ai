@@ -1,5 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import AnimatedSection from "@/components/AnimatedSection";
+import Image from "next/image";
 
 export default function ContactPage(){
   return (
@@ -17,6 +18,26 @@ export default function ContactPage(){
               <li>✉️ <a className="underline" href="mailto:contact@autostrata.ai">contact@autostrata.ai</a></li>
               <li>📍 Egham, United Kingdom</li>
               <li>🔗 https://autostrata.ai</li>
+              <li className="flex items-center gap-2">
+                <Image 
+                  src="/instagram.png" 
+                  alt="Instagram" 
+                  width={20} 
+                  height={20} 
+                  className="w-5 h-5"
+                />
+                <a className="underline" href="https://www.instagram.com/autostarta.ai?igsh=dDgwdG9jeXUxbGtr" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image 
+                  src="/linkedin.png" 
+                  alt="LinkedIn" 
+                  width={20} 
+                  height={20} 
+                  className="w-5 h-5"
+                />
+                <a className="underline" href="https://www.linkedin.com/company/108903270/admin/dashboard/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>
