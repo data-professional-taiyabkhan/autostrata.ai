@@ -7,7 +7,7 @@ export default function HomePage(){
   return (
     <main id="main">
       <AnimatedSection>
-        <div className="container grid md:grid-cols-2 gap-8 items-center py-10">
+        <div className="container grid md:grid-cols-2 gap-8 items-center py-16">
           <AnimatedText direction="left" delay={0.1}>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-reveal">
               <span className="stagger-1">AI‑powered solutions,</span><br />
@@ -41,15 +41,15 @@ export default function HomePage(){
 
       <AnimatedSection>
         <AnimatedText direction="up" delay={0.2}>
-          <h2 className="text-3xl font-bold mb-4">What we do</h2>
+          <h2 className="text-3xl font-bold mb-8">What we do</h2>
         </AnimatedText>
-        <StaggeredGrid className="grid md:grid-cols-2 gap-4" staggerDelay={0.2}>
-          <article className="bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow hover-lift glow-card">
-            <h3 className="font-bold mb-2">AI Agent Solutions</h3>
+        <StaggeredGrid className="grid md:grid-cols-2 gap-6" staggerDelay={0.2}>
+          <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
+            <h3 className="font-bold mb-3 text-lg">AI Agent Solutions</h3>
             <p className="opacity-80">Custom AI agents, chatbots, RAG systems, and multi-agent workflows for intelligent automation.</p>
           </article>
-          <article className="bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow hover-lift glow-card">
-            <h3 className="font-bold mb-2">AI Automation Solutions</h3>
+          <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
+            <h3 className="font-bold mb-3 text-lg">AI Automation Solutions</h3>
             <p className="opacity-80">Business process automation, document processing, and enterprise tool integration.</p>
           </article>
         </StaggeredGrid>
@@ -57,12 +57,12 @@ export default function HomePage(){
 
       <AnimatedSection>
         <AnimatedText direction="up" delay={0.3}>
-          <h2 className="text-3xl font-bold mb-4">Selected work</h2>
+          <h2 className="text-3xl font-bold mb-8">Selected work</h2>
         </AnimatedText>
-        <StaggeredGrid className="grid md:grid-cols-4 gap-4" staggerDelay={0.15}>
+        <StaggeredGrid className="grid md:grid-cols-4 gap-6" staggerDelay={0.15}>
           {['Virtual Receptionist','Mummy Help (Mobile)','AI Diet Tracker','Visa‑Sponsor Analytics'].map((t)=>(
-            <article key={t} className="bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow hover-lift glow-card">
-              <h3 className="font-bold mb-2">{t}</h3>
+            <article key={t} className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card">
+              <h3 className="font-bold mb-3 text-lg">{t}</h3>
               <p className="opacity-80">Outcome‑driven build. Ask us for a walkthrough demo.</p>
             </article>
           ))}
@@ -71,14 +71,12 @@ export default function HomePage(){
 
       <AnimatedSection>
         <AnimatedText direction="up" delay={0.4}>
-          <div className="text-center bg-white/5 border border-white/10 rounded-2xl p-6 shadow-glow hover-lift glow-card">
-            <h2 className="text-3xl font-bold">Ready to build?</h2>
-            <p className="opacity-80 mt-2">Tell us your goals — we'll propose the fastest path to value.</p>
-            <p className="mt-4">
-              <a className="px-4 py-2 rounded-lg bg-gradient-to-br from-brand to-[#3fa2ff] text-[#06121f] font-semibold border border-white/10 hover-lift hover-glow" href="/contact">
-                Talk to AutoStrata
-              </a>
-            </p>
+          <div className="text-center bg-white/5 border border-white/10 rounded-2xl p-8 shadow-glow hover-lift glow-card">
+            <h2 className="text-3xl font-bold mb-4">Ready to build?</h2>
+            <p className="opacity-80 mb-6">Tell us your goals — we'll propose the fastest path to value.</p>
+            <a className="px-6 py-3 rounded-lg bg-gradient-to-br from-brand to-[#3fa2ff] text-[#06121f] font-semibold border border-white/10 hover-lift hover-glow" href="/contact">
+              Talk to AutoStrata
+            </a>
           </div>
         </AnimatedText>
       </AnimatedSection>
