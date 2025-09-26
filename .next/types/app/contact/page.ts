@@ -1,4 +1,4 @@
-// File: /Users/yasjudanulislam/Documents/DemoApp/autostrata.ai/app/contact/page.tsx
+// File: D:\Projects\AutoStrata.ai\CompanyWebsite\app\contact\page.tsx
 import * as entry from '../../../../app/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function ServicesDropdown() {
   const [isOpen, setIsOpen] = useState(false)
-  const [timeoutId, setTimeoutId] = useState<number | null>(null)
+  const [timeoutId, setTimeoutId] = useState<any>(null)
 
   const handleMouseEnter = () => {
     if (timeoutId) {
