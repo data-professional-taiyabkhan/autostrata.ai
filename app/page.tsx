@@ -17,9 +17,9 @@ export default function HomePage(){
             <div className="mt-5">
               <a className="px-4 py-2 rounded-lg border border-white/20 hover-lift" href="/services">Explore services</a>
             </div>
-            <StaggeredGrid className="flex flex-wrap gap-3 mt-4 text-sm opacity-90" staggerDelay={0.1}>
+            <StaggeredGrid className="flex flex-wrap gap-4 mt-4 text-sm opacity-90" staggerDelay={0.1}>
               {['AI Agents', 'RAG Systems', 'Process Automation', 'Document Processing', 'Enterprise Integration'].map((tag, index) => (
-                <li key={tag} className="border border-white/10 rounded-full px-2 py-1 hover-glow">{tag}</li>
+                <div key={tag} className="border border-white/10 rounded-full px-4 py-2 text-base hover-glow">{tag}</div>
               ))}
             </StaggeredGrid>
           </AnimatedText>
