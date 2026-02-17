@@ -1,0 +1,74 @@
+---
+title: "Heart‑Eco — AI‑Driven Environmental Analytics Platform"
+description: "A private, data-grounded AI assistant for analysing HEART sustainability metrics across UK universities."
+client: "Professor Khurshid Ahmad"
+industry: "Environmental Research & Academia"
+services: ["AI Development", "RAG Systems", "Data Science", "Full-Stack Development"]
+results:
+  - "100% data-grounded responses with zero hallucination"
+  - "Ingested 15+ years of HEART metric datasets"
+  - "Interactive dashboards with Recharts and TanStack Table"
+  - "Delivered MVP in 4 weeks"
+date: "2025-01-20"
+featured: true
+coverImage: "/og-image.png"
+testimonial:
+  quote: "AutoStrata built exactly what we needed — an AI assistant that strictly answers from our datasets, not the internet. The guardrails and accuracy are exceptional."
+  author: "Professor Khurshid Ahmad"
+---
+
+## The Problem
+
+Professor Khurshid Ahmad's research team at a leading UK university needed a private, secure AI assistant
+that could interrogate decades of environmental sustainability data. The key challenge: the AI had to
+**strictly use provided datasets**, refuse external knowledge, and handle year-range validation — no
+hallucinations allowed.
+
+Existing tools like ChatGPT couldn't guarantee data grounding, and commercial analytics platforms
+lacked the specificity needed for HEART metrics (HV, HAV, HAR, HS).
+
+## Our Solution
+
+We built **Heart‑Eco AI** — a fully local, RAG-powered AI assistant with strict guardrails.
+
+### Data Ingestion Pipeline
+- Custom pipeline to ingest CSV, Excel, and PDF datasets spanning 15+ years
+- Semantic chunking with metadata preservation for year and metric type
+- Vector embeddings stored in a local vector database for fast retrieval
+
+### AI Agent Layer
+- RAG architecture ensuring every response cites source data
+- Strict refusal for out-of-range years — the AI won't guess
+- Stored scores used directly; derived analytics computed only on demand
+- Sources hidden by default, shown only when explicitly requested
+
+### Interactive Frontend
+- Next.js dashboard with Recharts for trend visualisation
+- TanStack Table for sortable, filterable data exploration
+- Flourish story embed for presentation-ready narratives
+- Dark-themed UI matching the research team's preferences
+
+### Security & Privacy
+- Entire system runs locally — no data leaves the institution
+- Basic access control for research team members
+- Guardrails against destructive commands
+
+## Tech Stack
+
+- **Backend:** Python, FastAPI, RAG pipeline
+- **AI:** Custom retrieval model with strict grounding
+- **Frontend:** Next.js, React, TailwindCSS, shadcn/ui, Recharts, TanStack Table
+- **Data:** Vector database, pandas, custom ingestion scripts
+- **Deployment:** On-premise (university infrastructure)
+
+## Results
+
+- **100% data-grounded** responses — zero hallucination in testing
+- **15+ years** of HEART metric data ingested and queryable
+- **Interactive dashboards** with publication-ready visualisations
+- **4-week MVP** delivery from first meeting to production
+- **Full privacy** — all data stays on-premise
+
+---
+
+*Need an AI system grounded in your data? [Talk to us about RAG](/contact).*

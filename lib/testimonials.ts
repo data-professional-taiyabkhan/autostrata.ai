@@ -48,5 +48,19 @@ export const testimonials: Testimonial[] = [
         role: "CTO",
         company: "PropView",
         country: "🇬🇧"
+    },
+    {
+        quote: "AutoStrata built exactly what we needed — an AI assistant that strictly answers from our datasets, not the internet. The guardrails and accuracy are exceptional.",
+        author: "Prof. Khurshid Ahmad",
+        role: "Research Lead",
+        company: "Heart‑Eco",
+        country: "🇬🇧"
+    },
+    {
+        quote: "They understood our pain points immediately. The automation they built has freed up our admin team to focus on client work instead of spreadsheets.",
+        author: "C&A Team",
+        role: "Management",
+        company: "C&A Solution",
+        country: "🇬🇧"
     }
 ];

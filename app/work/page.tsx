@@ -26,6 +26,25 @@ export default function WorkPage() {
                 </AnimatedText>
             </AnimatedSection>
 
+            {/* Stats banner */}
+            <AnimatedSection>
+                <AnimatedText direction="up" delay={0.15}>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        {[
+                            { value: `${projects.length}`, label: 'Projects Delivered' },
+                            { value: '4', label: 'Industries' },
+                            { value: '3 wks', label: 'Avg. Delivery' },
+                            { value: '100%', label: 'Client Satisfaction' },
+                        ].map((s) => (
+                            <div key={s.label} className="bg-white/5 border border-white/10 rounded-xl p-4 shadow-glow">
+                                <p className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent">{s.value}</p>
+                                <p className="text-xs opacity-60 mt-1">{s.label}</p>
+                            </div>
+                        ))}
+                    </div>
+                </AnimatedText>
+            </AnimatedSection>
+
             <AnimatedSection>
                 <StaggeredGrid className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={0.15}>
                     {projects.map((project) => (
