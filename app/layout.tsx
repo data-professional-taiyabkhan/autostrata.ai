@@ -4,7 +4,12 @@ import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+  preload: true
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://autostrata.ai"),
@@ -28,10 +33,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
         <div className="bg-orbits"><span className="orb orb-1"/><span className="orb orb-2"/><span className="orb orb-3"/></div>
         <NavBar />
-        {children}
+        <main className="flex-1">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

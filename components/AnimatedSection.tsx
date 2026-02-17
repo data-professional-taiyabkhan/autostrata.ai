@@ -9,7 +9,7 @@ export default function AnimatedSection({ children, delay=0 }:{ children: React.
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: .7, ease: "easeOut", delay }}
     >
-      <div className="section container">
+      <div className="section container py-12">
         {children}
       </div>
     </motion.section>

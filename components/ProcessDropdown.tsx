@@ -34,22 +34,22 @@ export default function ProcessDropdown() {
     {
       step: 1,
       title: 'Discover',
-      description: 'We execute with clear scopes, milestones, and a definition of done.'
+      description: 'Define success metrics, risks, and constraints → 1-page scope + timeline.'
     },
     {
       step: 2,
       title: 'Prototype',
-      description: 'We execute with clear scopes, milestones, and a definition of done.'
+      description: 'Thin-slice or clickable demo; test with 3–5 users.'
     },
     {
       step: 3,
       title: 'Launch',
-      description: 'We execute with clear scopes, milestones, and a definition of done.'
+      description: 'Harden, monitor, runbooks, fallback paths.'
     },
     {
       step: 4,
       title: 'Scale',
-      description: 'We execute with clear scopes, milestones, and a definition of done.'
+      description: 'Cost optimisation, analytics, 90-day roadmap.'
     }
   ]
 
