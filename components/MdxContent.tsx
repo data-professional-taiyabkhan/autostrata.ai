@@ -44,7 +44,6 @@ const components = {
 export default function MdxContent({ source }: MdxContentProps) {
     return (
         <div className="prose-custom max-w-none">
-            {/* @ts-expect-error RSC async component */}
             <MDXRemote source={source} components={components} />
         </div>
     );
