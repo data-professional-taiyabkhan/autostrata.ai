@@ -75,7 +75,7 @@ export default function WorkPage() {
 
 function WorkCard({ meta }: { meta: WorkMeta }) {
     return (
-        <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card flex flex-col">
+        <article className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card card-shadow flex flex-col">
             <div className="mb-3">
                 <span className="text-xs bg-brand/20 text-brand px-2 py-1 rounded-full">
                     {meta.industry}

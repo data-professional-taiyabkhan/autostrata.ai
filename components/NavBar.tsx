@@ -4,6 +4,16 @@ import { useState } from "react";
 import ServicesDropdown from "@/components/ServicesDropdown";
 import ProcessDropdown from "@/components/ProcessDropdown";
 
+const CALENDLY_URL = 'https://calendly.com/your-name/30min';
+
+function openCalendly() {
+  if (typeof window !== 'undefined' && (window as any).Calendly) {
+    (window as any).Calendly.initPopupWidget({ url: CALENDLY_URL });
+  } else {
+    window.open(CALENDLY_URL, '_blank');
+  }
+}
+
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   return (
@@ -32,12 +42,12 @@ export default function NavBar() {
           <ProcessDropdown />
           <Link href="/insights" className="opacity-90 hover:opacity-100 transition-opacity">Insights</Link>
           <Link href="/about" className="opacity-90 hover:opacity-100 transition-opacity">About</Link>
-          <Link
-            href="/contact"
-            className="bg-gradient-to-r from-brand to-[#3fa2ff] text-[#06121f] font-semibold px-4 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity"
+          <button
+            onClick={openCalendly}
+            className="bg-gradient-to-r from-brand to-[#3fa2ff] text-[#06121f] font-semibold px-4 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity cursor-pointer"
           >
-            Contact Us
-          </Link>
+            Book a Call
+          </button>
         </nav>
       </div>
     </header>

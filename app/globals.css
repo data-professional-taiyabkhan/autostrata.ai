@@ -180,3 +180,40 @@ html {
 .glow-card:hover::before {
   opacity: 1;
 }
+
+/* Cookie banner slide-up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* DevBeam-style card drop shadow */
+.card-shadow {
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.4),
+    0 20px 40px -10px rgba(91, 188, 255, 0.1),
+    0 0 0 1px rgba(91, 188, 255, 0.15);
+}
+
+/* Calendly overrides */
+.calendly-overlay {
+  z-index: 100 !important;
+}

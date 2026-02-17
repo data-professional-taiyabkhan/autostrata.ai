@@ -3,6 +3,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 import AnimatedText from '@/components/AnimatedText';
 import StaggeredGrid from '@/components/StaggeredGrid';
 import ParallaxSection from '@/components/ParallaxSection';
+import BookingButton from '@/components/BookingButton';
 import { serviceCards } from '@/lib/services-data';
 import { testimonials } from '@/lib/testimonials';
 import { faqs } from '@/lib/faq';
@@ -42,12 +43,7 @@ export default function HomePage() {
             </AnimatedText>
             <AnimatedText direction="up" delay={0.3}>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="px-8 py-3.5 rounded-lg bg-gradient-to-br from-brand to-[#3fa2ff] text-[#06121f] font-semibold text-lg hover-lift hover-glow inline-block"
-                >
-                  Book a Call
-                </Link>
+                <BookingButton />
                 <Link
                   href="/work"
                   className="px-8 py-3.5 rounded-lg border border-white/20 font-semibold text-lg hover:bg-white/5 transition-colors inline-block"
@@ -298,12 +294,7 @@ export default function HomePage() {
                 Tell us your goals — we&apos;ll propose the fastest path to value.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="px-8 py-3.5 rounded-lg bg-gradient-to-br from-brand to-[#3fa2ff] text-[#06121f] font-semibold text-lg hover-lift hover-glow inline-block"
-                >
-                  Talk to AutoStrata
-                </Link>
+                <BookingButton>Talk to AutoStrata</BookingButton>
                 <Link
                   href="mailto:contact@autostrata.ai"
                   className="px-8 py-3.5 rounded-lg border border-white/20 font-semibold text-lg hover:bg-white/5 transition-colors inline-block"

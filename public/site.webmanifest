@@ -1,0 +1,21 @@
+{
+    "name": "AutoStrata.ai",
+    "short_name": "AutoStrata",
+    "description": "AI-powered IT solutions: agentic AI, automation, data science, and full-stack development.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#06121f",
+    "theme_color": "#06121f",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
