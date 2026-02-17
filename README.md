@@ -10,7 +10,7 @@ AI‑powered IT solutions: agentic AI, automation, data science, and full‑stac
 - **Content:** MDX with gray-matter + next-mdx-remote
 - **Language:** TypeScript
 
-## Getting Start
+## Getting Started
 
 ```bash
 npm install
@@ -24,10 +24,10 @@ npm run build      # static export → /out
 app/
   page.tsx                # Homepage (8 sections)
   about/                  # About page
-  contact/                # Contact form (Formspree)
+  contact/                # Contact form (Formspree + floating labels)
   services/               # Services overview
   services/[slug]/        # Service detail (MDX)
-  work/                   # Case studies list
+  work/                   # Case studies list + stats banner
   work/[slug]/            # Case study detail (MDX)
   insights/               # Blog list
   insights/[slug]/        # Blog post detail (MDX)
@@ -35,15 +35,21 @@ app/
   products/               # Products list + [slug] detail
   privacy/                # Privacy policy
 
-components/               # Reusable UI components
+components/
+  BookingButton.tsx       # Calendly popup trigger
+  CookieBanner.tsx        # GDPR cookie consent banner
+  ContactForm.tsx         # Floating-label form with validation
+  NavBar.tsx / Footer.tsx # Site navigation
+
 content/
-  work/*.mdx              # Case study content
-  insights/*.mdx          # Blog post content
-  services/*.mdx          # Service page content
+  work/*.mdx              # Case study content (5 projects)
+  insights/*.mdx          # Blog post content (8 articles)
+  services/*.mdx          # Service page content (4 services)
+
 lib/
   content.ts              # MDX content loader
   seo.ts                  # JSON-LD schema generators
-  testimonials.ts         # Testimonial data
+  testimonials.ts         # Testimonial data (8 entries)
   faq.ts                  # FAQ data
   services-data.ts        # Services grid data
   products.ts             # Product catalogue
@@ -68,6 +74,9 @@ results:
 date: "2025-01-01"
 featured: true
 coverImage: "/og-image.png"
+testimonial:
+  quote: "Client quote here"
+  author: "Client Name"
 ---
 
 ## The Problem
@@ -120,13 +129,25 @@ date: "2024-01-01"
 Your markdown content here...
 ```
 
-## Environment Variables
+## Configuration
+
+### Environment Variables
 
 Copy `.env.example` to `.env.local`:
 
 ```
 NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/xxxxxxx
 ```
+
+### Booking Widget
+
+The booking button uses Calendly. Update the URL in:
+- `components/BookingButton.tsx` — change `CALENDLY_URL`
+- `components/NavBar.tsx` — change `CALENDLY_URL`
+
+### Cookie Banner
+
+The cookie banner stores consent in `localStorage` under key `cookie-consent`. It links to `/privacy` for the full policy.
 
 ## Deployment
 
