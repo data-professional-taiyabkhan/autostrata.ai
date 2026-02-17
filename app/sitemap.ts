@@ -1,25 +1,41 @@
 import { MetadataRoute } from 'next';
-import { products } from '@/lib/products';
+import { getWorkSlugs, getInsightSlugs, getServiceSlugs } from '@/lib/content';
+
+const BASE_URL = 'https://autostrata.ai';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://autostrata.ai';
-  const lastmod = new Date().toISOString();
-  
-  const staticPages = [
-    { url: `${base}/`, lastModified: lastmod, priority: 0.9 },
-    { url: `${base}/about`, lastModified: lastmod, priority: 0.7 },
-    { url: `${base}/services`, lastModified: lastmod, priority: 0.8 },
-    { url: `${base}/process`, lastModified: lastmod, priority: 0.7 },
-    { url: `${base}/contact`, lastModified: lastmod, priority: 0.8 },
-    { url: `${base}/products`, lastModified: lastmod, priority: 0.8 },
-    { url: `${base}/privacy`, lastModified: lastmod, priority: 0.5 },
+  const staticRoutes = [
+    '', '/about', '/services', '/process', '/products', '/contact', '/privacy',
+    '/work', '/insights',
   ];
 
-  const productPages = products.map(product => ({
-    url: `${base}/products/${product.slug}`,
-    lastModified: lastmod,
+  const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
+    url: `${BASE_URL}${route}`,
+    lastModified: new Date(),
+    changeFrequency: route === '' ? 'weekly' : 'monthly',
+    priority: route === '' ? 1 : 0.8,
+  }));
+
+  const workEntries: MetadataRoute.Sitemap = getWorkSlugs().map((slug) => ({
+    url: `${BASE_URL}/work/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
     priority: 0.7,
   }));
 
-  return [...staticPages, ...productPages];
+  const insightEntries: MetadataRoute.Sitemap = getInsightSlugs().map((slug) => ({
+    url: `${BASE_URL}/insights/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+
+  const serviceEntries: MetadataRoute.Sitemap = getServiceSlugs().map((slug) => ({
+    url: `${BASE_URL}/services/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+
+  return [...staticEntries, ...workEntries, ...insightEntries, ...serviceEntries];
 }
