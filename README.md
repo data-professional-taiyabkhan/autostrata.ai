@@ -10,7 +10,7 @@ AI‑powered IT solutions: agentic AI, automation, data science, and full‑stac
 - **Content:** MDX with gray-matter + next-mdx-remote
 - **Language:** TypeScript
 
-## Getting Started
+## Getting Start
 
 ```bash
 npm install
