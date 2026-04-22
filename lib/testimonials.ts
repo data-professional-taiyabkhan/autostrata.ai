@@ -51,7 +51,7 @@ export const testimonials: Testimonial[] = [
     },
     {
         quote: "AutoStrata built exactly what we needed — an AI assistant that strictly answers from our datasets, not the internet. The guardrails and accuracy are exceptional.",
-        author: "Prof. Khurshid Ahmad",
+        author: "Prof. Khurshid Ul Imtiyaz",
         role: "Research Lead",
         company: "Heart‑Eco",
         country: "🇬🇧"
