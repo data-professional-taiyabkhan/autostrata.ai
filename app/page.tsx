@@ -2,7 +2,6 @@ import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 import AnimatedText from '@/components/AnimatedText';
 import StaggeredGrid from '@/components/StaggeredGrid';
-import ParallaxSection from '@/components/ParallaxSection';
 import BookingButton from '@/components/BookingButton';
 import { serviceCards } from '@/lib/services-data';
 import { testimonials } from '@/lib/testimonials';
@@ -11,7 +10,9 @@ import { getAllWork } from '@/lib/content';
 import { organizationJsonLd, localBusinessJsonLd } from '@/lib/seo';
 
 export default function HomePage() {
-  const featuredWork = getAllWork().slice(0, 3);
+  const allWork = getAllWork();
+  const sartorial = allWork.find((w) => w.meta.slug === 'sartorial-london');
+  const heartEco = allWork.find((w) => w.meta.slug === 'heart-eco');
 
   return (
     <>
@@ -24,232 +25,364 @@ export default function HomePage() {
       <div id="main">
         {/* ── Hero ──────────────────────────────────────── */}
         <AnimatedSection>
-          <div className="py-8 md:py-16 text-center max-w-4xl mx-auto">
+          <div className="py-10 md:py-20 max-w-4xl">
+            <AnimatedText direction="up" delay={0.05}>
+              <span className="inline-flex items-center gap-2 px-3 py-1.5 border border-white/15 rounded-full text-xs opacity-70 mb-8">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand shadow-[0_0_8px_var(--brand)] animate-pulse" />
+                Accepting projects · UK &amp; international
+              </span>
+            </AnimatedText>
             <AnimatedText direction="up" delay={0.1}>
-              <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-                AI‑powered solutions,{' '}
-                <span className="bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent">
-                  built fast&nbsp;&amp;&nbsp;affordable
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[0.95] tracking-tight mb-7">
+                Marketplaces. Payments.{' '}
+                <br className="hidden md:block" />
+                AI&nbsp;agents —{' '}
+                <span className="bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent italic">
+                  shipped fast.
                 </span>
               </h1>
             </AnimatedText>
             <AnimatedText direction="up" delay={0.2}>
-              <p className="mt-5 text-lg md:text-xl opacity-80 max-w-2xl mx-auto leading-relaxed">
-                We deliver <strong className="text-white">intelligent AI agents</strong>,{' '}
-                <strong className="text-white">business automation</strong>, and{' '}
-                <strong className="text-white">enterprise integration</strong> without offshore
-                outsourcing — from startups to enterprise.
+              <p className="text-lg md:text-xl opacity-70 max-w-2xl leading-relaxed mb-10">
+                AutoStrata is a UK studio for founders and SMBs. We build Sharetribe
+                marketplaces, Stripe Connect platforms, and production AI agents —
+                measured in weeks, not quarters.
               </p>
             </AnimatedText>
             <AnimatedText direction="up" delay={0.3}>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                <BookingButton />
+              <div className="flex flex-wrap gap-3">
+                <BookingButton>
+                  Start a project <span className="ml-1">→</span>
+                </BookingButton>
                 <Link
-                  href="/work"
-                  className="px-8 py-3.5 rounded-lg border border-white/20 font-semibold text-lg hover:bg-white/5 transition-colors inline-block"
+                  href="#work"
+                  className="px-6 py-3 rounded-full border border-white/20 font-medium text-sm hover:bg-white/5 transition-colors inline-flex items-center"
                 >
-                  View Our Work
+                  See the work
                 </Link>
               </div>
             </AnimatedText>
           </div>
         </AnimatedSection>
 
-        {/* ── Trust Bar / Stats ────────────────────────── */}
-        <AnimatedSection>
-          <AnimatedText direction="up" delay={0.15}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center py-4">
-              {[
-                { value: '15+', label: 'Projects Delivered' },
-                { value: '2–6 wk', label: 'Avg. Turnaround' },
-                { value: '100%', label: 'UK-Based Team' },
-                { value: '5★', label: 'Client Rating' },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <p className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent">
-                    {stat.value}
-                  </p>
-                  <p className="text-sm opacity-60 mt-1">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </AnimatedText>
-        </AnimatedSection>
-
-        {/* ── Services Grid ────────────────────────────── */}
+        {/* ── Trust Strip ────────────────────────────────── */}
         <AnimatedSection>
           <AnimatedText direction="up" delay={0.1}>
-            <h2 className="text-3xl font-bold mb-2">What We Do</h2>
-            <p className="opacity-70 mb-8 max-w-xl">
-              End‑to‑end AI and engineering services designed for real business impact.
-            </p>
-          </AnimatedText>
-          <StaggeredGrid className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.1}>
-            {serviceCards.map((svc) => (
-              <Link
-                key={svc.title}
-                href={svc.href}
-                className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card block group"
-              >
-                <span className="text-3xl mb-3 block">{svc.icon}</span>
-                <h3 className="font-bold mb-2 text-lg group-hover:text-brand transition-colors">
-                  {svc.title}
-                </h3>
-                <p className="opacity-80 text-sm">{svc.description}</p>
-              </Link>
-            ))}
-          </StaggeredGrid>
-          <AnimatedText direction="up" delay={0.3}>
-            <div className="mt-8 text-center">
-              <Link
-                href="/services"
-                className="text-brand font-medium hover:opacity-80 transition-opacity"
-              >
-                View all services →
-              </Link>
-            </div>
-          </AnimatedText>
-        </AnimatedSection>
-
-        {/* ── Featured Work ────────────────────────────── */}
-        <AnimatedSection>
-          <AnimatedText direction="up" delay={0.1}>
-            <h2 className="text-3xl font-bold mb-2">Selected Work</h2>
-            <p className="opacity-70 mb-8 max-w-xl">
-              Real projects with measurable outcomes.
-            </p>
-          </AnimatedText>
-          <StaggeredGrid className="grid md:grid-cols-3 gap-8" staggerDelay={0.15}>
-            {featuredWork.map((project) => (
-              <Link
-                key={project.meta.slug}
-                href={`/work/${project.meta.slug}`}
-                className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card block group"
-              >
-                <span className="text-xs bg-brand/20 text-brand px-2 py-1 rounded-full">
-                  {project.meta.industry}
-                </span>
-                <h3 className="font-bold mt-3 mb-2 text-lg group-hover:text-brand transition-colors">
-                  {project.meta.title}
-                </h3>
-                <p className="opacity-80 text-sm mb-4">{project.meta.description}</p>
-                {project.meta.results && (
-                  <ul className="space-y-1">
-                    {project.meta.results.slice(0, 2).map((r, i) => (
-                      <li key={i} className="text-xs text-brand flex items-start gap-1.5">
-                        <span className="mt-0.5">✓</span>
-                        <span>{r}</span>
-                      </li>
-                    ))}
-                  </ul>
+            <div className="flex items-center gap-8 md:gap-12 flex-wrap py-6 border-t border-b border-white/10">
+              <span className="text-xs uppercase tracking-widest opacity-40 font-mono">
+                Built for
+              </span>
+              <div className="flex gap-8 md:gap-10 flex-wrap items-center">
+                {['Sartorial London', 'Heart‑Eco', 'Empire Exchange', 'C&A Solution'].map(
+                  (client) => (
+                    <span
+                      key={client}
+                      className="text-lg md:text-xl opacity-50 italic font-serif"
+                    >
+                      {client}
+                    </span>
+                  )
                 )}
-              </Link>
-            ))}
-          </StaggeredGrid>
-          <AnimatedText direction="up" delay={0.3}>
-            <div className="mt-8 text-center">
-              <Link
-                href="/work"
-                className="text-brand font-medium hover:opacity-80 transition-opacity"
-              >
-                View all projects →
-              </Link>
+              </div>
             </div>
           </AnimatedText>
         </AnimatedSection>
 
-        {/* ── Process Timeline ─────────────────────────── */}
+        {/* ── Services ───────────────────────────────────── */}
         <AnimatedSection>
           <AnimatedText direction="up" delay={0.1}>
-            <h2 className="text-3xl font-bold mb-2">How We Work</h2>
-            <p className="opacity-70 mb-8 max-w-xl">
-              Four proven steps from idea to production.
-            </p>
-          </AnimatedText>
-          <StaggeredGrid
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
-            staggerDelay={0.15}
-          >
-            {[
-              {
-                step: 1,
-                title: 'Discover',
-                desc: 'Define success metrics, risks, and constraints.',
-                deliverables: ['Scope document', 'Timeline & budget', 'Success criteria'],
-              },
-              {
-                step: 2,
-                title: 'Prototype',
-                desc: 'Build a thin-slice demo and test with real users.',
-                deliverables: ['Working prototype', 'User feedback', 'Refined scope'],
-              },
-              {
-                step: 3,
-                title: 'Launch',
-                desc: 'Harden, monitor, and deploy to production.',
-                deliverables: ['Production deploy', 'Monitoring setup', 'Runbooks'],
-              },
-              {
-                step: 4,
-                title: 'Scale',
-                desc: 'Optimise costs, add analytics, plan next steps.',
-                deliverables: ['Performance tuning', 'Analytics dashboard', '90-day roadmap'],
-              },
-            ].map((s) => (
-              <div
-                key={s.step}
-                className="relative bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow"
-              >
-                <span className="absolute -top-3 -left-3 w-8 h-8 grid place-items-center font-bold text-[#06121f] rounded-full bg-gradient-to-br from-brand to-[#3fa2ff] shadow-glow text-sm">
-                  {s.step}
+            <div className="mb-12 max-w-2xl">
+              <span className="text-xs uppercase tracking-widest opacity-40 font-mono block mb-4">
+                // What we do
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Four things we ship{' '}
+                <span className="bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent italic">
+                  very well.
                 </span>
-                <h3 className="font-bold mb-2 text-lg text-brand">{s.title}</h3>
-                <p className="opacity-80 text-sm mb-3">{s.desc}</p>
-                <ul className="space-y-1">
-                  {s.deliverables.map((d, i) => (
-                    <li key={i} className="text-xs opacity-60 flex items-center gap-1.5">
-                      <span className="w-1 h-1 rounded-full bg-brand inline-block" />
-                      {d}
-                    </li>
+              </h2>
+              <p className="opacity-70">
+                We focus deliberately. The teams that win against generalist agencies
+                are specialists with a portfolio that proves it.
+              </p>
+            </div>
+          </AnimatedText>
+
+          <StaggeredGrid
+            className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden"
+            staggerDelay={0.1}
+          >
+            {serviceCards.map((svc) => (
+              <div
+                key={svc.title}
+                className="bg-[#070b18] p-8 md:p-10 hover:bg-[#0f131c] transition-colors"
+              >
+                <span className="text-xs font-mono opacity-40 block mb-5">
+                  {svc.num} / {svc.title}
+                </span>
+                <h3 className="text-xl md:text-2xl font-bold mb-3">{svc.title}</h3>
+                <p className="opacity-70 text-sm leading-relaxed mb-5">
+                  {svc.description}
+                </p>
+                <div className="flex gap-2 flex-wrap">
+                  {svc.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-2.5 py-1 border border-white/15 rounded-full opacity-60 font-mono"
+                    >
+                      {tag}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </StaggeredGrid>
-          <AnimatedText direction="up" delay={0.4}>
-            <div className="mt-8 text-center">
-              <Link
-                href="/process"
-                className="text-brand font-medium hover:opacity-80 transition-opacity"
-              >
-                Learn more about our process →
-              </Link>
-            </div>
-          </AnimatedText>
+        </AnimatedSection>
+
+        {/* ── Case Studies ───────────────────────────────── */}
+        <section id="work">
+          <AnimatedSection>
+            <AnimatedText direction="up" delay={0.1}>
+              <div className="mb-12 max-w-2xl">
+                <span className="text-xs uppercase tracking-widest opacity-40 font-mono block mb-4">
+                  // Selected work
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Things we&rsquo;ve actually{' '}
+                  <span className="bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent italic">
+                    shipped.
+                  </span>
+                </h2>
+                <p className="opacity-70">
+                  Real projects with real clients. The detail below comes from the
+                  actual delivery docs.
+                </p>
+              </div>
+            </AnimatedText>
+
+            {/* Sartorial London */}
+            <AnimatedText direction="up" delay={0.15}>
+              <div className="border border-white/10 rounded-2xl p-8 md:p-12 mb-6 bg-gradient-to-b from-white/[0.03] to-transparent">
+                <div className="grid md:grid-cols-2 gap-10">
+                  <div>
+                    <span className="text-xs uppercase tracking-widest opacity-40 font-mono block mb-3">
+                      UK · Designer Rental Marketplace
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                      Sartorial&nbsp;London
+                    </h3>
+                    <p className="opacity-70 leading-relaxed mb-5">
+                      A custom Sharetribe Flex marketplace for designer fashion rentals —
+                      including a fixed 5-day rental engine, a mobile category grid, a
+                      dynamic Featured Fits carousel, and groundwork for Stripe card holds
+                      and sent / returned tracking.
+                    </p>
+                    <div className="flex gap-2 flex-wrap mb-6">
+                      {['Sharetribe Flex', 'Stripe', 'Marketplace', 'React'].map((t) => (
+                        <span key={t} className="text-xs px-2.5 py-1 border border-white/15 rounded-full opacity-60 font-mono">{t}</span>
+                      ))}
+                    </div>
+                    <blockquote className="border-t border-white/10 pt-5 mt-5">
+                      <p className="italic opacity-90 leading-relaxed">
+                        &ldquo;They know what they are doing, tested everything, it looks great. Thank you.&rdquo;
+                      </p>
+                      <span className="text-xs opacity-40 mt-2 block">Samir · Sartorial London 🇬🇧</span>
+                    </blockquote>
+                  </div>
+                  <div className="space-y-4">
+                    {[
+                      { title: 'Fixed 5-day rental engine', desc: 'Renter-side calendar locked to a 5-day window with auto-calculated end dates and full-window availability validation.' },
+                      { title: 'Custom Featured Fits carousel', desc: 'Dynamic component pulling the 5–6 most recent listings via Sharetribe API, with CMS section-name override.' },
+                      { title: 'Mobile category grid', desc: 'Replaced vertical slider with Gucci-inspired 2×2 grid using Tailwind responsive utilities.' },
+                      { title: 'Shipping fees for rentals', desc: 'Extended pricing logic to add shipping line-items to rental transactions, not just sale items.' },
+                      { title: 'Stripe deposit prep', desc: 'Console-level documentation and design for card pre-authorisation with auto-capture before the 7-day Stripe limit.' },
+                    ].map((b) => (
+                      <div key={b.title} className="flex gap-3 items-start">
+                        <span className="w-1.5 h-1.5 rounded-full bg-brand mt-2.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm font-medium">{b.title}</p>
+                          <p className="text-xs opacity-50 mt-0.5 leading-relaxed">{b.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </AnimatedText>
+
+            {/* Heart-Eco */}
+            <AnimatedText direction="up" delay={0.15}>
+              <div className="border border-white/10 rounded-2xl p-8 md:p-12 mb-6 bg-gradient-to-b from-white/[0.03] to-transparent">
+                <div className="grid md:grid-cols-2 gap-10">
+                  <div>
+                    <span className="text-xs uppercase tracking-widest opacity-40 font-mono block mb-3">
+                      UK · Economic AI Platform
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                      Heart‑Eco · HEART AI
+                    </h3>
+                    <p className="opacity-70 leading-relaxed mb-5">
+                      A grounded agentic AI system that turns the HEART Score Economic Model
+                      into an interactive analyst — answering descriptive, perspective,
+                      diagnostic, and predictive questions about country-level performance
+                      using proprietary data only, never the open web.
+                    </p>
+                    <div className="flex gap-2 flex-wrap">
+                      {['Agentic AI', 'RAG', 'n8n', 'GPT', 'Next.js 14', 'TypeScript'].map((t) => (
+                        <span key={t} className="text-xs px-2.5 py-1 border border-white/15 rounded-full opacity-60 font-mono">{t}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    {[
+                      { title: 'Two-model architecture', desc: 'Model 1 on OpenAI Agent Builder for descriptive / perspective / diagnostic answers; Model 2 on n8n + GPT for predictive forecasts grounded in ensemble ML.' },
+                      { title: 'Strict tool routing', desc: 'Numbers come from numeric master sheets only; methodology from doctrine docs; narrative from forecast commentary — preventing the model from improvising facts.' },
+                      { title: 'Forecast transparency rules', desc: 'Years 2026–2030 are auto-labelled as forecasts with explicit fallback behaviour when narrative is missing.' },
+                      { title: 'Dashboard deployment', desc: 'Next.js 14 + TypeScript + Tailwind + Recharts dashboard, deployed on Vercel as part of the HeartEco product.' },
+                      { title: 'Domain-faithful boundary', desc: 'Restricted knowledge boundary in the system prompt — refuses unrelated queries and never uses web knowledge.' },
+                    ].map((b) => (
+                      <div key={b.title} className="flex gap-3 items-start">
+                        <span className="w-1.5 h-1.5 rounded-full bg-brand mt-2.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm font-medium">{b.title}</p>
+                          <p className="text-xs opacity-50 mt-0.5 leading-relaxed">{b.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </AnimatedText>
+
+            {/* Mini cards: Empire Exchange + C&A */}
+            <AnimatedText direction="up" delay={0.15}>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="border border-white/10 rounded-2xl p-7 bg-white/[0.02]">
+                  <span className="text-xs uppercase tracking-widest opacity-40 font-mono block mb-2">
+                    UK · Trading &amp; Exchange
+                  </span>
+                  <h4 className="text-xl font-bold mb-2">Empire Exchange</h4>
+                  <p className="text-sm opacity-60 leading-relaxed mb-4">
+                    SEO-optimised brand website with custom forms — built fast, focused on
+                    conversion and clean information architecture.
+                  </p>
+                  <blockquote className="border-t border-white/10 pt-4">
+                    <p className="italic opacity-80 text-sm">
+                      &ldquo;My partner and I can&rsquo;t believe how quickly you guys developed this web app.&rdquo;
+                    </p>
+                    <span className="text-xs opacity-40 mt-1 block">Umesh · Empire Exchange 🇬🇧</span>
+                  </blockquote>
+                </div>
+                <div className="border border-white/10 rounded-2xl p-7 bg-white/[0.02]">
+                  <span className="text-xs uppercase tracking-widest opacity-40 font-mono block mb-2">
+                    UK · Professional Services
+                  </span>
+                  <h4 className="text-xl font-bold mb-2">C&amp;A Solution</h4>
+                  <p className="text-sm opacity-60 leading-relaxed mb-4">
+                    SEO-led website with embedded enquiry forms, designed for service-based
+                    lead capture and a strong first impression for new prospects.
+                  </p>
+                  <div className="flex gap-2 flex-wrap mt-3">
+                    {['SEO', 'Forms', 'Lead Capture'].map((t) => (
+                      <span key={t} className="text-xs px-2.5 py-1 border border-white/15 rounded-full opacity-60 font-mono">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </AnimatedText>
+          </AnimatedSection>
+        </section>
+
+        {/* ── Process ────────────────────────────────────── */}
+        <AnimatedSection>
+          <div className="bg-white/[0.02] border-t border-b border-white/10 -mx-[4%] px-[4%] py-16 md:py-24">
+            <AnimatedText direction="up" delay={0.1}>
+              <div className="mb-12 max-w-2xl">
+                <span className="text-xs uppercase tracking-widest opacity-40 font-mono block mb-4">
+                  // How we work
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Sprint scopes.{' '}
+                  <span className="bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent italic">
+                    Measurable outcomes.
+                  </span>
+                </h2>
+                <p className="opacity-70">
+                  No bloated proposals. We move from first call to shipped deliverable in weeks.
+                </p>
+              </div>
+            </AnimatedText>
+
+            <StaggeredGrid
+              className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+              staggerDelay={0.12}
+            >
+              {[
+                {
+                  num: 'i.',
+                  title: 'Discovery call',
+                  desc: '30-minute call to understand the outcome you need and the smallest viable path to get there.',
+                },
+                {
+                  num: 'ii.',
+                  title: 'Sprint scope',
+                  desc: 'Fixed scope, fixed timeline, clear definition of done. No vague retainers.',
+                },
+                {
+                  num: 'iii.',
+                  title: 'Build & ship',
+                  desc: 'Daily progress visible. We integrate with your stack — Sharetribe, Stripe, Vercel, Supabase, your CRM.',
+                },
+                {
+                  num: 'iv.',
+                  title: 'Iterate',
+                  desc: 'Optional follow-on sprints once we\u2019ve hit the first measurable result.',
+                },
+              ].map((s) => (
+                <div key={s.num}>
+                  <span className="text-4xl md:text-5xl font-bold italic bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent block mb-4">
+                    {s.num}
+                  </span>
+                  <h4 className="font-bold text-lg mb-2">{s.title}</h4>
+                  <p className="opacity-60 text-sm leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
+            </StaggeredGrid>
+          </div>
         </AnimatedSection>
 
         {/* ── Testimonials ─────────────────────────────── */}
         <AnimatedSection>
           <AnimatedText direction="up" delay={0.1}>
-            <h2 className="text-3xl font-bold mb-8 text-center">What Our Clients Say</h2>
+            <div className="mb-12 max-w-2xl">
+              <span className="text-xs uppercase tracking-widest opacity-40 font-mono block mb-4">
+                // In their words
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                What clients{' '}
+                <span className="bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent italic">
+                  have said.
+                </span>
+              </h2>
+            </div>
           </AnimatedText>
-          <StaggeredGrid className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.12}>
+          <StaggeredGrid className="grid md:grid-cols-2 gap-6" staggerDelay={0.12}>
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-glow hover-lift glow-card"
+                className="border border-white/10 rounded-2xl p-8 bg-white/[0.02]"
               >
-                <blockquote className="opacity-90 leading-relaxed mb-4">
+                <blockquote className="text-lg md:text-xl leading-relaxed italic mb-6">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="font-semibold text-brand text-sm">{t.author}</p>
-                    <p className="text-xs opacity-60">
-                      {t.role}, {t.company}
-                    </p>
+                <div className="flex items-center gap-3 pt-5 border-t border-white/10">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand to-[#3fa2ff] flex items-center justify-center text-[#06121f] font-bold text-sm flex-shrink-0">
+                    {t.initials}
                   </div>
-                  <span className="text-xl">{t.country}</span>
+                  <div>
+                    <p className="font-medium text-sm">{t.author}</p>
+                    <p className="text-xs opacity-50">{t.company} · {t.role}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -288,20 +421,23 @@ export default function HomePage() {
         {/* ── Final CTA ────────────────────────────────── */}
         <AnimatedSection>
           <AnimatedText direction="up" delay={0.2}>
-            <div className="text-center bg-white/5 border border-white/10 rounded-2xl p-10 shadow-glow hover-lift glow-card">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Build?</h2>
-              <p className="opacity-80 mb-8 text-lg max-w-xl mx-auto">
-                Tell us your goals — we&apos;ll propose the fastest path to value.
+            <div className="text-center py-16 md:py-24 border-t border-white/10">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto">
+                Tell us your goal — we&apos;ll propose the{' '}
+                <span className="bg-gradient-to-r from-brand to-[#3fa2ff] bg-clip-text text-transparent italic">
+                  fastest path.
+                </span>
+              </h2>
+              <p className="opacity-70 text-lg mb-10 max-w-xl mx-auto">
+                Marketplace, payment platform, AI agent, or a website that actually
+                converts. One short form, response within one working day.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <BookingButton>Talk to AutoStrata</BookingButton>
-                <Link
-                  href="mailto:contact@autostrata.ai"
-                  className="px-8 py-3.5 rounded-lg border border-white/20 font-semibold text-lg hover:bg-white/5 transition-colors inline-block"
-                >
-                  contact@autostrata.ai
-                </Link>
-              </div>
+              <BookingButton>
+                Talk to AutoStrata <span className="ml-1">→</span>
+              </BookingButton>
+              <p className="mt-8 text-xs opacity-40 uppercase tracking-wider font-mono">
+                📍 Egham · UK &nbsp;·&nbsp; 🌍 Timezone-flexible &nbsp;·&nbsp; ✉️ contact@autostrata.ai
+              </p>
             </div>
           </AnimatedText>
         </AnimatedSection>

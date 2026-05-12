@@ -1,6 +1,6 @@
 'use client'
 
-const CALENDLY_URL = 'https://calendly.com/your-name/30min';
+const CALENDLY_URL = 'https://calendly.com/contact-autostrata/30min';
 
 export default function BookingButton({ className, children }: { className?: string; children?: React.ReactNode }) {
     const openCalendly = () => {

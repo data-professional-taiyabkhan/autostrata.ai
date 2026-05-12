@@ -1,73 +1,49 @@
 ---
-title: "Heart‑Eco — AI‑Driven Environmental Analytics Platform"
-description: "A private, data-grounded AI assistant for analysing HEART sustainability metrics across UK universities."
+title: "Heart‑Eco · HEART AI — Agentic Economic Analytics"
+description: "A grounded agentic AI system that turns the HEART Score Economic Model into an interactive analyst — answering descriptive, perspective, diagnostic, and predictive questions using proprietary data only."
 client: "Professor Khurshid Ahmad"
 industry: "Environmental Research & Academia"
-services: ["AI Development", "RAG Systems", "Data Science", "Full-Stack Development"]
+services: ["Agentic AI", "RAG", "n8n", "GPT", "Next.js 14", "TypeScript"]
 results:
-  - "100% data-grounded responses with zero hallucination"
-  - "Ingested 15+ years of HEART metric datasets"
-  - "Interactive dashboards with Recharts and TanStack Table"
-  - "Delivered MVP in 4 weeks"
+  - "Two-model architecture: OpenAI Agent Builder + n8n + GPT"
+  - "Strict tool routing preventing fact improvisation"
+  - "Forecast transparency: 2026–2030 auto-labelled as forecasts"
+  - "Next.js 14 + Recharts dashboard deployed on Vercel"
+  - "Domain-faithful boundary refusing unrelated queries"
 date: "2025-01-20"
 featured: true
 coverImage: "/og-image.png"
-testimonial:
-  quote: "AutoStrata built exactly what we needed — an AI assistant that strictly answers from our datasets, not the internet. The guardrails and accuracy are exceptional."
-  author: "Professor Khurshid Ahmad"
 ---
 
 ## The Problem
 
-Professor Khurshid Ahmad's research team at a leading UK university needed a private, secure AI assistant
-that could interrogate decades of environmental sustainability data. The key challenge: the AI had to
-**strictly use provided datasets**, refuse external knowledge, and handle year-range validation — no
-hallucinations allowed.
+Professor Khurshid Ahmad's research team needed a private, secure AI assistant that could interrogate decades of environmental sustainability data using the HEART Score Economic Model. The key challenge: the AI had to **strictly use provided datasets**, refuse external knowledge, and handle year-range validation — no hallucinations allowed.
 
-Existing tools like ChatGPT couldn't guarantee data grounding, and commercial analytics platforms
-lacked the specificity needed for HEART metrics (HV, HAV, HAR, HS).
+Existing tools couldn't guarantee data grounding, and commercial analytics platforms lacked the specificity needed for HEART metrics.
 
 ## Our Solution
 
-We built **Heart‑Eco AI** — a fully local, RAG-powered AI assistant with strict guardrails.
+### Two-Model Architecture
+Model 1 on OpenAI Agent Builder for descriptive / perspective / diagnostic answers; Model 2 on n8n + GPT for predictive forecasts grounded in ensemble ML. This separation ensures each model operates within its domain of expertise.
 
-### Data Ingestion Pipeline
-- Custom pipeline to ingest CSV, Excel, and PDF datasets spanning 15+ years
-- Semantic chunking with metadata preservation for year and metric type
-- Vector embeddings stored in a local vector database for fast retrieval
+### Strict Tool Routing
+Numbers come from numeric master sheets only; methodology from doctrine docs; narrative from forecast commentary — preventing the model from improvising facts. Every data point is traceable to its source.
 
-### AI Agent Layer
-- RAG architecture ensuring every response cites source data
-- Strict refusal for out-of-range years — the AI won't guess
-- Stored scores used directly; derived analytics computed only on demand
-- Sources hidden by default, shown only when explicitly requested
+### Forecast Transparency Rules
+Years 2026–2030 are auto-labelled as forecasts with explicit fallback behaviour when narrative is missing. Users always know whether they're looking at historical data or projections.
 
-### Interactive Frontend
-- Next.js dashboard with Recharts for trend visualisation
-- TanStack Table for sortable, filterable data exploration
-- Flourish story embed for presentation-ready narratives
-- Dark-themed UI matching the research team's preferences
+### Dashboard Deployment
+Next.js 14 + TypeScript + Tailwind + Recharts dashboard, deployed on Vercel as part of the HeartEco product. Interactive visualisations let researchers explore data without writing queries.
 
-### Security & Privacy
-- Entire system runs locally — no data leaves the institution
-- Basic access control for research team members
-- Guardrails against destructive commands
+### Domain-Faithful Boundary
+Restricted knowledge boundary in the system prompt — refuses unrelated queries and never uses web knowledge. The AI stays in its lane and tells users when a question falls outside its domain.
 
 ## Tech Stack
 
-- **Backend:** Python, FastAPI, RAG pipeline
-- **AI:** Custom retrieval model with strict grounding
-- **Frontend:** Next.js, React, TailwindCSS, shadcn/ui, Recharts, TanStack Table
+- **AI:** OpenAI Agent Builder, n8n workflows, custom RAG pipeline
+- **Frontend:** Next.js 14, React, TypeScript, Tailwind CSS, Recharts
 - **Data:** Vector database, pandas, custom ingestion scripts
-- **Deployment:** On-premise (university infrastructure)
-
-## Results
-
-- **100% data-grounded** responses — zero hallucination in testing
-- **15+ years** of HEART metric data ingested and queryable
-- **Interactive dashboards** with publication-ready visualisations
-- **4-week MVP** delivery from first meeting to production
-- **Full privacy** — all data stays on-premise
+- **Deployment:** Vercel
 
 ---
 

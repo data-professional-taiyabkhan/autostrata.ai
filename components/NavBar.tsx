@@ -4,7 +4,7 @@ import { useState } from "react";
 import ServicesDropdown from "@/components/ServicesDropdown";
 import ProcessDropdown from "@/components/ProcessDropdown";
 
-const CALENDLY_URL = 'https://calendly.com/your-name/30min';
+const CALENDLY_URL = 'https://calendly.com/contact-autostrata/30min';
 
 function openCalendly() {
   if (typeof window !== 'undefined' && (window as any).Calendly) {

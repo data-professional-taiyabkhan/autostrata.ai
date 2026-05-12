@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AutoStrata — Marketplaces, Payments & AI Agents, shipped fast</title>
+<meta name="description" content="AutoStrata is a UK studio that ships Sharetribe marketplaces, Stripe Connect platforms, and production AI agents for founders and SMBs." />
+<link rel="icon" href="https://autostrata.ai/logo.svg" type="image/svg+xml" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0a0d14;
+    --bg-elev: #0f131c;
+    --bg-card: #11151f;
+    --border: #1c212e;
+    --border-strong: #2a3142;
+    --ink: #f3f1ec;
+    --ink-dim: #a4a8b3;
+    --ink-faint: #6b6f7a;
+    --accent: #b8ff5a;
+    --accent-dim: #8fc944;
+    --warn: #f5b342;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Background grid texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 64px 64px;
+    background-position: -1px -1px;
+    opacity: 0.25;
+    z-index: 0;
+    pointer-events: none;
+    mask-image: radial-gradient(ellipse at center top, black 0%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse at center top, black 0%, transparent 70%);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Typography */
+  h1, h2, h3 { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+  .display {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(48px, 8vw, 104px);
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+  }
+  .display .italic { font-style: italic; color: var(--accent); }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .lead {
+    font-size: clamp(17px, 1.5vw, 20px);
+    color: var(--ink-dim);
+    line-height: 1.55;
+    max-width: 640px;
+  }
+
+  /* Nav */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(10, 13, 20, 0.7);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .nav.scrolled { border-bottom-color: var(--border); }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  .brand img { height: 28px; width: 28px; }
+  .brand-text { font-family: 'Geist', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: -0.01em; }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a {
+    color: var(--ink-dim);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  @media (max-width: 768px) { .nav-links { display: none; } }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-family: 'Geist', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    line-height: 1;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: #0a0d14;
+    border-color: var(--accent);
+  }
+  .btn-primary:hover {
+    background: #c9ff7a;
+    border-color: #c9ff7a;
+    transform: translateY(-1px);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--border-strong);
+  }
+  .btn-ghost:hover {
+    border-color: var(--ink-dim);
+    background: rgba(255,255,255,0.02);
+  }
+  .btn .arrow { transition: transform 0.2s; }
+  .btn:hover .arrow { transform: translateX(3px); }
+
+  /* Hero */
+  .hero {
+    padding: 80px 0 120px;
+    position: relative;
+  }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-dim);
+    margin-bottom: 32px;
+    letter-spacing: 0.05em;
+  }
+  .hero-tag .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .hero h1 { margin-bottom: 28px; max-width: 920px; }
+  .hero .lead { margin-bottom: 40px; }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* Trust strip */
+  .trust {
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .trust-inner {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .trust-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .trust-clients {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .trust-client {
+    font-family: 'Instrument Serif', serif;
+    font-size: 22px;
+    color: var(--ink-dim);
+    font-style: italic;
+  }
+
+  /* Sections */
+  .section { padding: 120px 0; position: relative; }
+  .section-head { margin-bottom: 64px; max-width: 720px; }
+  .section-head .eyebrow { margin-bottom: 16px; display: block; }
+  .section-head h2 {
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  .section-head h2 .italic { font-style: italic; color: var(--accent); }
+  .section-head p { color: var(--ink-dim); font-size: 18px; line-height: 1.55; }
+
+  /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; } }
+  .service-card {
+    background: var(--bg);
+    padding: 40px;
+    transition: background 0.2s;
+    position: relative;
+  }
+  .service-card:hover { background: var(--bg-elev); }
+  .service-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-faint);
+    margin-bottom: 24px;
+  }
+  .service-card h3 {
+    font-size: 28px;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+  .service-card p {
+    color: var(--ink-dim);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .service-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    color: var(--ink-dim);
+    letter-spacing: 0.02em;
+  }
+
+  /* Case studies */
+  .case {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 48px;
+    margin-bottom: 24px;
+    background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .case { grid-template-columns: 1fr; padding: 32px; gap: 28px; }
+  }
+  .case-meta { }
+  .case-meta .eyebrow { margin-bottom: 12px; display: block; }
+  .case h3 {
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.05;
+    margin-bottom: 16px;
+    letter-spacing: -0.015em;
+  }
+  .case-summary {
+    color: var(--ink-dim);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .case-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+  .case-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .case-bullet {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .case-bullet .bullet-mark {
+    flex-shrink: 0;
+    margin-top: 8px;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+  .case-bullet div { font-size: 14.5px; line-height: 1.55; color: var(--ink); }
+  .case-bullet div span { color: var(--ink-dim); display: block; font-size: 13.5px; margin-top: 2px; }
+  .case-quote {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink);
+    line-height: 1.45;
+  }
+  .case-quote .attribution {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: var(--ink-faint);
+    letter-spacing: 0.01em;
+  }
+  .case-mini-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  @media (max-width: 600px) { .case-mini-grid { grid-template-columns: 1fr; } }
+  .case-mini {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    background: var(--bg-card);
+  }
+  .case-mini h4 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .case-mini p { font-size: 14px; color: var(--ink-dim); line-height: 1.55; margin-bottom: 14px; }
+
+  /* Process */
+  .process {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-elev);
+    margin: 0 -24px;
+    padding: 120px 24px;
+  }
+  .process-inner { max-width: 1200px; margin: 0 auto; }
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+  }
+  @media (max-width: 900px) { .process-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .process-grid { grid-template-columns: 1fr; } }
+  .process-step .step-num {
+    font-family: 'Instrument Serif', serif;
+    font-size: 56px;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .process-step h4 {
+    font-family: 'Geist', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+  .process-step p { color: var(--ink-dim); font-size: 14.5px; line-height: 1.55; }
+
+  /* Testimonials */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; } }
+  .testimonial {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+    background: var(--bg-card);
+  }
+  .testimonial blockquote {
+    font-family: 'Instrument Serif', serif;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--ink);
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+  .testimonial-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--warn));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Geist', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--bg);
+    flex-shrink: 0;
+  }
+  .testimonial-name { font-weight: 500; font-size: 15px; }
+  .testimonial-role { font-size: 13px; color: var(--ink-dim); }
+
+  /* CTA */
+  .cta {
+    margin: 0 -24px;
+    padding: 120px 24px;
+    background:
+      radial-gradient(ellipse at center, rgba(184,255,90,0.08) 0%, transparent 60%),
+      var(--bg);
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+  .cta-inner { max-width: 760px; margin: 0 auto; }
+  .cta h2 {
+    font-size: clamp(40px, 7vw, 80px);
+    line-height: 1;
+    margin-bottom: 24px;
+    letter-spacing: -0.025em;
+  }
+  .cta h2 .italic { font-style: italic; color: var(--accent); }
+  .cta p {
+    color: var(--ink-dim);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-meta {
+    margin-top: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-faint);
+    letter-spacing: 0.05em;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 64px 0 32px;
+    background: var(--bg);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+  .footer-brand { max-width: 320px; }
+  .footer-brand .brand { margin-bottom: 16px; }
+  .footer-brand p { font-size: 14px; color: var(--ink-dim); line-height: 1.6; }
+  .footer-col h5 {
+    font-family: 'Geist', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--ink);
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col a {
+    color: var(--ink-dim);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.15s;
+  }
+  .footer-col a:hover { color: var(--ink); }
+  .footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-bottom p, .footer-bottom a {
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    text-decoration: none;
+  }
+
+  /* Reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="https://autostrata.ai/" class="brand">
+      <img src="https://autostrata.ai/logo.svg" alt="AutoStrata" />
+      <span class="brand-text">AutoStrata.ai</span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="https://autostrata.ai/about/">About</a>
+      <a href="https://autostrata.ai/contact" class="btn btn-primary">Book a Call <span class="arrow">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      <span>Accepting projects · UK &amp; international</span>
+    </div>
+    <h1 class="display">
+      Marketplaces. Payments.<br>
+      AI agents — <span class="italic">shipped fast.</span>
+    </h1>
+    <p class="lead">
+      AutoStrata is a UK studio for founders and SMBs. We build Sharetribe marketplaces, Stripe Connect platforms, and production AI agents — measured in weeks, not quarters.
+    </p>
+    <div class="hero-actions">
+      <a href="https://autostrata.ai/contact" class="btn btn-primary">Start a project <span class="arrow">→</span></a>
+      <a href="#work" class="btn btn-ghost">See the work</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="container">
+    <div class="trust-inner">
+      <span class="trust-label">Built for</span>
+      <div class="trust-clients">
+        <span class="trust-client">Sartorial London</span>
+        <span class="trust-client">Heart-Eco</span>
+        <span class="trust-client">Empire Exchange</span>
+        <span class="trust-client">C&amp;A Solution</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// What we do</span>
+      <h2>Four things we ship <span class="italic">very well.</span></h2>
+      <p>We focus deliberately. The teams that win against generalist agencies are specialists with a portfolio that proves it.</p>
+    </div>
+
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-num">01 / Marketplace Engineering</div>
+        <h3>Sharetribe Flex, customised</h3>
+        <p>Beyond default templates — custom rental engines, dynamic landing components, complex booking logic, mobile-first redesigns, and Console-level transaction process work.</p>
+        <div class="service-tags">
+          <span class="tag">Sharetribe Flex</span>
+          <span class="tag">Custom Components</span>
+          <span class="tag">Booking Logic</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">02 / Payment Infrastructure</div>
+        <h3>Stripe Connect platforms</h3>
+        <p>Multi-party payouts, marketplace splits, rental deposits with card pre-authorisation and auto-capture, line-item shipping fees, and the transactional plumbing that ties it all together.</p>
+        <div class="service-tags">
+          <span class="tag">Stripe Connect</span>
+          <span class="tag">Card Holds</span>
+          <span class="tag">Marketplace Splits</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">03 / AI Agents &amp; RAG</div>
+        <h3>Production agentic systems</h3>
+        <p>Grounded AI agents that follow your methodology — n8n workflows, OpenAI Assistants, custom RAG over proprietary docs and datasets, with strict tool routing and source-of-truth controls.</p>
+        <div class="service-tags">
+          <span class="tag">n8n</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">RAG</span>
+          <span class="tag">GPT-5.1</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">04 / Web &amp; Brand Presence</div>
+        <h3>Conversion-led websites</h3>
+        <p>SEO-optimised, fast, lead-capture-ready sites for SMBs that need a serious online presence without an agency retainer. Built on Next.js, deployed on Vercel.</p>
+        <div class="service-tags">
+          <span class="tag">Next.js 14</span>
+          <span class="tag">SEO</span>
+          <span class="tag">Tailwind</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section" id="work" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Selected work</span>
+      <h2>Things we&rsquo;ve actually <span class="italic">shipped.</span></h2>
+      <p>Real projects with real clients. The detail below comes from the actual delivery docs.</p>
+    </div>
+
+    <!-- Case 1: Sartorial London -->
+    <div class="case reveal">
+      <div class="case-meta">
+        <span class="eyebrow">UK · Designer Rental Marketplace</span>
+        <h3>Sartorial&nbsp;London</h3>
+        <p class="case-summary">
+          A custom Sharetribe Flex marketplace for designer fashion rentals — including a fixed 5-day rental engine, a mobile category grid, a dynamic Featured Fits carousel, and groundwork for Stripe card holds and sent / returned tracking.
+        </p>
+        <div class="case-tags">
+          <span class="tag">Sharetribe Flex</span>
+          <span class="tag">Stripe</span>
+          <span class="tag">Marketplace</span>
+          <span class="tag">React</span>
+        </div>
+        <blockquote class="case-quote">
+          &ldquo;They know what they are doing, tested everything, it looks great. Thank you.&rdquo;
+          <span class="attribution">Samir · Sartorial London 🇬🇧</span>
+        </blockquote>
+      </div>
+
+      <div class="case-details">
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Fixed 5-day rental engine
+            <span>Renter-side calendar locked to a 5-day window with auto-calculated end dates and full-window availability validation.</span>
+          </div>
+        </div>
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Custom Featured Fits carousel
+            <span>Dynamic component pulling the 5–6 most recent listings via Sharetribe API, with CMS section-name override.</span>
+          </div>
+        </div>
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Mobile category grid
+            <span>Replaced vertical slider with Gucci-inspired 2×2 grid using Tailwind responsive utilities.</span>
+          </div>
+        </div>
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Shipping fees for rentals
+            <span>Extended pricing logic to add shipping line-items to rental transactions, not just sale items.</span>
+          </div>
+        </div>
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Stripe deposit prep
+            <span>Console-level documentation and design for card pre-authorisation with auto-capture before the 7-day Stripe limit.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 2: Heart-Eco -->
+    <div class="case reveal">
+      <div class="case-meta">
+        <span class="eyebrow">UK · Economic AI Platform</span>
+        <h3>Heart-Eco · HEART AI</h3>
+        <p class="case-summary">
+          A grounded agentic AI system that turns the HEART Score Economic Model into an interactive analyst — answering descriptive, perspective, diagnostic, and predictive questions about country-level performance using proprietary data only, never the open web.
+        </p>
+        <div class="case-tags">
+          <span class="tag">Agentic AI</span>
+          <span class="tag">RAG</span>
+          <span class="tag">n8n</span>
+          <span class="tag">GPT-5.1</span>
+          <span class="tag">Next.js 14</span>
+          <span class="tag">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="case-details">
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Two-model architecture
+            <span>Model 1 on OpenAI Agent Builder for descriptive / perspective / diagnostic answers; Model 2 on n8n + GPT-5.1 for predictive forecasts grounded in ensemble ML.</span>
+          </div>
+        </div>
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Strict tool routing
+            <span>Numbers come from numeric master sheets only; methodology from doctrine docs; narrative from forecast commentary — preventing the model from improvising facts.</span>
+          </div>
+        </div>
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Forecast transparency rules
+            <span>Years 2026–2030 are auto-labelled as forecasts with explicit fallback behaviour when narrative is missing.</span>
+          </div>
+        </div>
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Dashboard deployment
+            <span>Next.js 14 + TypeScript + Tailwind + Recharts dashboard, deployed on Vercel as part of the HeartEco product.</span>
+          </div>
+        </div>
+        <div class="case-bullet">
+          <div class="bullet-mark"></div>
+          <div>Domain-faithful boundary
+            <span>Restricted knowledge boundary in the system prompt — refuses unrelated queries and never uses web knowledge.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 3: Mini grid -->
+    <div class="case-mini-grid reveal">
+      <div class="case-mini">
+        <span class="eyebrow" style="display:block; margin-bottom:10px;">UK · Trading &amp; Exchange</span>
+        <h4>Empire Exchange</h4>
+        <p>SEO-optimised brand website with custom forms — built fast, focused on conversion and clean information architecture.</p>
+        <blockquote class="case-quote" style="margin-top:0; padding-top:16px;">
+          &ldquo;My partner and I can&rsquo;t believe how quickly you guys developed this web app.&rdquo;
+          <span class="attribution">Umesh · Empire Exchange 🇬🇧</span>
+        </blockquote>
+      </div>
+      <div class="case-mini">
+        <span class="eyebrow" style="display:block; margin-bottom:10px;">UK · Professional Services</span>
+        <h4>C&amp;A Solution</h4>
+        <p>SEO-led website with embedded enquiry forms, designed for service-based lead capture and a strong first impression for new prospects.</p>
+        <div class="case-tags" style="margin-top:14px;">
+          <span class="tag">SEO</span>
+          <span class="tag">Forms</span>
+          <span class="tag">Lead Capture</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="process-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow">// How we work</span>
+      <h2>Sprint scopes. <span class="italic">Measurable outcomes.</span></h2>
+      <p>No bloated proposals. We move from first call to shipped deliverable in weeks.</p>
+    </div>
+
+    <div class="process-grid reveal">
+      <div class="process-step">
+        <div class="step-num">i.</div>
+        <h4>Discovery call</h4>
+        <p>30-minute call to understand the outcome you need and the smallest viable path to get there.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">ii.</div>
+        <h4>Sprint scope</h4>
+        <p>Fixed scope, fixed timeline, clear definition of done. No vague retainers.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">iii.</div>
+        <h4>Build &amp; ship</h4>
+        <p>Daily progress visible. We integrate with your stack — Sharetribe, Stripe, Vercel, Supabase, your CRM.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">iv.</div>
+        <h4>Iterate</h4>
+        <p>Optional follow-on sprints once we&rsquo;ve hit the first measurable result.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// In their words</span>
+      <h2>What clients <span class="italic">have said.</span></h2>
+    </div>
+
+    <div class="testimonials-grid reveal">
+      <div class="testimonial">
+        <blockquote>
+          &ldquo;They know what they are doing, tested everything, it looks great. Thank you.&rdquo;
+        </blockquote>
+        <div class="testimonial-meta">
+          <div class="testimonial-avatar">SJ</div>
+          <div>
+            <div class="testimonial-name">Samir Jamil</div>
+            <div class="testimonial-role">Sartorial London · Founder</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <blockquote>
+          &ldquo;My partner and I can&rsquo;t believe how quickly you guys developed this web app.&rdquo;
+        </blockquote>
+        <div class="testimonial-meta">
+          <div class="testimonial-avatar">U</div>
+          <div>
+            <div class="testimonial-name">Umesh</div>
+            <div class="testimonial-role">Empire Exchange · Co-founder</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-inner">
+    <h2>Tell us your goal — we&rsquo;ll propose the <span class="italic">fastest path.</span></h2>
+    <p>Marketplace, payment platform, AI agent, or a website that actually converts. One short form, response within one working day.</p>
+    <a href="https://autostrata.ai/contact" class="btn btn-primary" style="padding: 16px 28px; font-size: 15px;">
+      Talk to AutoStrata <span class="arrow">→</span>
+    </a>
+    <div class="cta-meta">
+      📍 EGHAM · UK &nbsp;·&nbsp; 🌍 TIMEZONE-FLEXIBLE &nbsp;·&nbsp; ✉️ CONTACT@AUTOSTRATA.AI
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="https://autostrata.ai/" class="brand">
+          <img src="https://autostrata.ai/logo.svg" alt="AutoStrata" />
+          <span class="brand-text">AutoStrata.ai</span>
+        </a>
+        <p>AI-powered solutions built fast &amp; affordable. UK-based studio serving startups to enterprise.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="https://autostrata.ai/about/">About</a></li>
+          <li><a href="https://autostrata.ai/services/">Services</a></li>
+          <li><a href="https://autostrata.ai/work/">Work</a></li>
+          <li><a href="https://autostrata.ai/insights/">Insights</a></li>
+          <li><a href="https://autostrata.ai/process/">Process</a></li>
+          <li><a href="https://autostrata.ai/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="https://autostrata.ai/services/ai-agents/">AI Agents</a></li>
+          <li><a href="https://autostrata.ai/services/rag/">RAG Systems</a></li>
+          <li><a href="https://autostrata.ai/services/automation/">Automation</a></li>
+          <li><a href="https://autostrata.ai/services/document-ai/">Document AI</a></li>
+          <li><a href="https://autostrata.ai/products/">Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:contact@autostrata.ai">✉️ contact@autostrata.ai</a></li>
+          <li style="color: var(--ink-dim); font-size:14px;">📍 Egham, United Kingdom</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AutoStrata Ltd. All rights reserved.</p>
+      <p>
+        <a href="https://autostrata.ai/privacy/">Privacy Policy</a>
+        &nbsp;·&nbsp;
+        Company No. Registered in England &amp; Wales
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sticky nav border
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 8);
+  });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach((el) => io.observe(el));
+</script>
+
+</body>
+</html>
