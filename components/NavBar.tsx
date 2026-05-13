@@ -7,11 +7,11 @@ import ProcessDropdown from "@/components/ProcessDropdown";
 const CALENDLY_URL = 'https://calendly.com/contact-autostrata/30min';
 
 function openCalendly() {
-  if (typeof window !== 'undefined' && (window as any).Calendly) {
+  if (typeof window !== 'undefined' && (window as any).Calendly?.initPopupWidget) {
     (window as any).Calendly.initPopupWidget({ url: CALENDLY_URL });
-  } else {
-    window.open(CALENDLY_URL, '_blank');
+    return;
   }
+  window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
 }
 
 export default function NavBar() {

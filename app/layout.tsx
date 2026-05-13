@@ -45,6 +45,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Calendly widget CSS — required for popup to render correctly */}
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
         <meta name="theme-color" content="#06121f" />
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col`}>
@@ -58,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Calendly widget script */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
       </body>
     </html>
