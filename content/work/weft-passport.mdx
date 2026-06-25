@@ -1,0 +1,49 @@
+---
+title: "Weft Passport — Textile Provenance & Compliance Platform"
+description: "A SKU-level proof-of-origin platform that lets ethical fashion brands prove 'handwoven' and 'ethical-origin' claims — capturing provenance at source and turning it into a public QR passport and a regulator-ready compliance record."
+client: "Weft Passport (Silk and Soil)"
+industry: "Ethical Fashion & Textile Supply Chain"
+services: ["Next.js 14", "Supabase", "Postgres RLS", "Full-Stack Engineering", "Compliance Tooling"]
+results:
+  - "Multi-tenant provenance model: artisan → loom → batch → SKU"
+  - "Role-based access for admins, brands and field coordinators"
+  - "Public consumer QR provenance page, anonymous-readable via Postgres RLS"
+  - "Batch certification lifecycle wired end-to-end: capture → submit → certify"
+  - "Built for incoming EU ECGT, Digital Product Passport and UK Green Claims Code"
+date: "2026-06-20"
+featured: true
+coverImage: "/og-image.png"
+---
+
+## The Problem
+
+Machine-made cloth is routinely sold as "handwoven," and the people who actually weave it are invisible in the supply chain. At the same time, regulation is closing in: the EU's Empowering Consumers for the Green Transition directive, the textile Digital Product Passport, and the UK's Green Claims Code all mean that brands making "handwoven" or "ethical-origin" claims will soon have to **prove them** — or face penalties for greenwashing.
+
+Our client needed a way to record provenance at the source — down to the individual artisan and loom — and turn it into proof a brand and a regulator could trust.
+
+## Our Solution
+
+### Provenance captured at source
+A field verification flow records the artisan, household, loom, location and photos behind a batch of cloth, built around a multi-tenant data model that links artisan → loom → batch → SKU.
+
+### A certification lifecycle, not just a database
+Batches move through a clear lifecycle — captured in the field, submitted for review, then certified by an admin — so every claim is backed by a deliberate verification step rather than self-declaration.
+
+### Proof for two different audiences
+A certified batch produces two things: a **public consumer provenance page**, reached by a QR code, that tells a shopper who made the item; and a **brand-facing compliance record** aligned to the incoming regulatory frameworks.
+
+### Built on least-privilege security
+Role-based access separates admins, brands and field coordinators, and the public provenance page is made safely readable by anonymous visitors through dedicated Postgres Row-Level Security policies — public where it should be, locked down everywhere else.
+
+### Built thin by design
+The hard-won asset here is the client's field methodology, dataset and regulatory mapping — so the software was built standard and fast on a modern, proven stack rather than over-engineered.
+
+## Tech Stack
+
+- **Frontend:** Next.js 14 (App Router), React, TypeScript, Tailwind CSS
+- **Backend & data:** Supabase — PostgreSQL, Auth, Row-Level Security
+- **Deployment:** Vercel
+
+---
+
+*Need to prove your supply-chain claims before the regulation does? [Talk to us](/contact).*

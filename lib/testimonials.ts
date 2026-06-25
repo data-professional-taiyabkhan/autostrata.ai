@@ -39,5 +39,13 @@ export const testimonials: Testimonial[] = [
         company: "C&A Solution",
         country: "🇬🇧",
         initials: "CA"
-    }
+    },
+    {
+    quote: "Thanks for Delivering the MVP in record time. The team is very responsive and easy to work with. We are looking forward to working with them on the next phase of our project.",
+    author: "Mahjabeen Bano",
+    role: "Founder & CEO",
+    company: "Weft Passport · Silk and Soil",
+    country: "🇬🇧",
+    initials: "MB"
+    },
 ];
