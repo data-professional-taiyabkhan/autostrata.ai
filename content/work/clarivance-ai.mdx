@@ -1,0 +1,50 @@
+---
+title: "Clarivance AI — Marketing Site, Waitlist & Codebase Audit for a Pre-Launch Fintech"
+description: "The production marketing site and secure serverless waitlist for a pre-launch UK fintech building AI cash-flow forecasting and HMRC Making Tax Digital automation — plus a full audit of the AI-generated codebase and a scoped path to the HMRC integration."
+client: "Clarivance AI"
+industry: "Fintech — Tax & Accounting Automation"
+services: ["React 19 + TanStack Start", "Serverless Backend", "SEO & Accessibility", "Codebase Audit", "HMRC MTD Integration Scoping"]
+results:
+  - "Production marketing site on React 19 + TanStack Start, server-rendered and pre-rendered for fast first paint"
+  - "Secure serverless waitlist capture — API token kept server-side, no secrets in the browser"
+  - "Per-page SEO with JSON-LD structured data and a generated sitemap"
+  - "Accessibility passes and UK-GDPR legal pages (privacy, terms, cookies)"
+  - "End-to-end audit of the AI-generated codebase, with build, routing and content-accuracy fixes"
+  - "HMRC Making Tax Digital API integration scoped (OAuth2 + fraud-prevention headers) for the product build"
+date: "2026-06-25"
+featured: false
+coverImage: "/og-image.png"
+---
+
+## The Problem
+
+Clarivance AI is a pre-launch UK fintech building AI cash-flow forecasting and HMRC Making Tax Digital (MTD) tax automation for sole traders and small businesses. The product engine is still to be built — what the team needed first was a credible, fast, conversion-focused marketing site to explain the proposition, capture an early-access waitlist, and stand up the SEO, accessibility and legal groundwork a consumer fintech launches on.
+
+There was a second, quieter problem. The starting codebase had been generated with an AI site builder, so before anything could be trusted in production it needed a proper engineering audit — not just "does it look right," but does it build cleanly, route correctly, keep secrets off the client, and say things that are actually true.
+
+## Our Solution
+
+### A fast, server-rendered marketing site
+We delivered the site on React 19 with TanStack Start, using server-side rendering and route pre-rendering so pages paint fast and are friendly to search engines — built deliberately on a modern stack the team can keep extending toward the product itself.
+
+### A waitlist that doesn't leak secrets
+Early-access sign-ups are captured through a serverless function rather than a third-party form, so the API token for the data store lives on the server and never ships to the browser. Same-origin, no exposed keys, no CORS workarounds.
+
+### SEO, accessibility and legal groundwork
+Every page got its own metadata and JSON-LD structured data, backed by a generated sitemap. We added accessibility passes and the UK-GDPR legal pages — privacy, terms and cookies — that a data-collecting fintech needs in place before it starts collecting.
+
+### An audited, trustworthy codebase
+We ran a full audit of the AI-generated code and fixed the issues that matter in production — build and configuration problems, routing, and a stale regulatory timeline in the content that no longer matched HMRC's published MTD schedule. The goal was a codebase the founder can stand behind and build on.
+
+### A clear path to the real product
+The headline capability — filing to HMRC under Making Tax Digital — is a regulated integration, not a website feature. We scoped it properly: OAuth2 through the Government Gateway, HMRC's mandatory fraud-prevention headers, and the sandbox-to-production approval path — so when the product build begins, the route is already costed and de-risked rather than discovered late.
+
+## Tech Stack
+
+- **Frontend:** React 19, TanStack Start (SSR + pre-render), Vite 7, Tailwind v4, shadcn/ui, TypeScript
+- **Backend:** Vercel serverless functions, Airtable (waitlist capture)
+- **Quality & growth:** per-page SEO + JSON-LD, generated sitemap, accessibility, UK-GDPR legal pages
+
+---
+
+*Launching a product and need the site, the waitlist and the compliance groundwork done right — on a stack you can keep building on? [Talk to us](/contact).*
