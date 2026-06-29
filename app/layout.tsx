@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PostHogProvider from "@/components/PostHogProvider";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar";
@@ -65,7 +66,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="afterInteractive"
         />
+        {/* Microsoft Clarity analytics */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window,document,"clarity","script","xe8rlsnhqz");
+          `}
+        </Script>
         <Analytics />
+        <PostHogProvider />
       </body>
     </html>
   );
